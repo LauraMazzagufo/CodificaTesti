@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 22/03/2021
+    Nome file: "hierarchical-relationship.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    COnsegna: Scrivere e fare il check di un xml non opportunamente annidato.
+-->
+
+<CORPO>
+    <padre>
+
+        <figlio> <!-- l'elemento <figlio> non è opportunamente annidato -->
+
+    </padre>
+
+        </figlio>
+
+</CORPO>

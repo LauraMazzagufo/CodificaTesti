@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 22/03/2021
+    Nome file: "esercizio-CDATA.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    COnsegna: Inserire all'interno di un tag un frammento di codice HTML.
+-->
+
+<corpo>
+
+    <htmlCode>
+        <!-- inizio del blocco CDATA -->
+        <![CDATA[
+            <h1>Capitolo Primo</h1>
+                <h2>Sezione Seconda</h2>
+        ]]>
+        <!-- fine del blocco CDATA -->
+    </htmlCode>
+</corpo>
