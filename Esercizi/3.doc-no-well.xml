@@ -1,0 +1,38 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 22/03/2021
+    Nome file: "doc-no-well.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    COnsegna: Aprire il file XML non ben formattato presente nel repository github:
+                - validarlo con un parser XML
+                - correggerlo (commentando gli errori e le modifiche)
+                - aggiungere un figlio (child) ad un elemento
+                - aggiungere un fratello (sibling) ad un elemento.
+-->
+
+<docu>
+    <element>
+
+    </element>
+    <noWell> <!-- il nome del tag di apertura deve essere uguale al nome del tag di chiusura:
+                modifico il nome in <noWell> -->
+        <over> <!-- overlap: il tag di chiusura di <over> (elemento figlio)
+                si trova all'esterno del tag di chiusura di <element> (elemento padre): 
+                lo sposto prima di </noWell> -->
+        </over>
+    </noWell>
+
+    <newElement>
+    questo è un nuovo elemento child
+    <!-- <newElement> è un elemento child rispetto a <docu> 
+        e un elemento sibling rispetto a <element> e <nowell> -->
+    </newElement>
+
+    <newSibling>
+    questo è un nuovo elemento sibling
+    <!-- <newSibling> è un nuovo elemento, 
+        sullo stesso livello di <newElement>, <noWell> e <element> -->
+    </newSibling>
+</docu>
