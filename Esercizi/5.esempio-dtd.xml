@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 29/03/2021
+    Nome file: "esempio-dtd.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Definire i seguenti elementi: 
+            1. Elemento root: TEI
+            2. Elementi figli: 
+            - header (obbligatorio, una occorrenza), 
+            - facsimile (opzionale, una sola occorrenza), 
+            - text (obbligatorio, almeno una occorrenza). 
+            Gli elementi header, facsimile e text hanno tutti un content model testuale. -->
+
+<TEI>
+    <header></header>
+    <facsimile></facsimile>
+    <text></text>
+    <!-- sono elementi testuali, quindi non posso inserire altri elementi ma solo testo -->
+</TEI>

@@ -1,0 +1,29 @@
+<!ELEMENT TEI (header,facsimile?,text+)>
+<!-- TEI va in maiuscolo perché case sensitive 
+     il content model dell'elemento TEI va tra parentesi tonde 
+     i figli di TEI sono a loro volta elementi, quindi vanno dichiarati: -->
+
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!-- non è possibile dichiarare, per ora, più elementi tutti insieme 
+     header è un elemento solo testo, quindi si inserisce la keyword #PCDATA 
+     stessa cosa per gli altri elementi figli 
+     senza modificatori, gli elementi figli sarebbero: obbligatori e comparirebbero una sola volta 
+     quindi modifico l'elemento padre, aggiungendo un + dopo text 
+     inoltre, aggiungo modificatore anche dopo facsimile-->
+
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 29/03/2021
+    Nome file: "esempio-dtd.dtd"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Definire i seguenti elementi: 
+            1. Elemento root: TEI
+            2. Elementi figli: 
+            - header (obbligatorio, una occorrenza), 
+            - facsimile (opzionale, una sola occorrenza), 
+            - text (obbligatorio, almeno una occorrenza). 
+            Gli elementi header, facsimile e text hanno tutti un content model testuale. 
+-->
