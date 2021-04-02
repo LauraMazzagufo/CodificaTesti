@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 02/04/2021
+    Nome file: "esercizio-validazione-internalDTD.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: 
+            -	Includere all’interno di un documento XML la dichiarazione del tipo, definire internamente gli elementi e gli attributi e validare;
+            -	Inserire nel prologo di un documento XML la dichiarazione del tipo di documento e validare. Creare un file esterno con estensione .dtd prima di includerlo nel prologo XML.
+
+-->
+
+<!-- INTERNAL DTD:-->
+<!DOCTYPE TEI [
+<!ELEMENT TEI (padre,elemento+,altroElemento?,altroPadre)>
+
+<!ELEMENT padre (figlio)> 
+<!ELEMENT elemento (#PCDATA)>
+<!ELEMENT altroElemento (#PCDATA)>
+<!ELEMENT altroPadre (#PCDATA|altroFiglio)*>
+
+<!ELEMENT figlio (#PCDATA)>
+<!ELEMENT altroFiglio (#PCDATA)>
+
+<!ATTLIST padre lang ID #IMPLIED>
+<!ATTLIST figlio attribute IDREF #IMPLIED>
+<!ATTLIST elemento type CDATA #IMPLIED>
+<!ATTLIST altroElemento lang NMTOKEN #IMPLIED>
+<!ATTLIST altroPadre lang ID #IMPLIED>
+<!ATTLIST altroFiglio attribute IDREF #IMPLIED>
+]>
+
+<TEI>
+    <padre>
+        <figlio></figlio>
+    </padre>
+
+    <elemento>Questo è un elemento testuale</elemento>
+
+    <elemento>Questo è un altro elemento testuale</elemento>
+
+    <altroPadre>
+        Questo è un elemento misto.
+        <altroFiglio>Testo</altroFiglio>
+    </altroPadre>
+
+</TEI>

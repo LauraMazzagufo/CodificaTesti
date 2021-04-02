@@ -1,0 +1,33 @@
+<!ELEMENT TEI (padre,elemento+,altroElemento?,altroPadre)>
+<!-- <padre> ha una sola occorrenza
+     <elemento> ha una o opiù occorrenze
+     <altroElemento> ha zero o una occorrenza
+     <altroPadre> ha una sola occorrenza -->
+
+<!ELEMENT padre (figlio)> <!-- elemento strutturato -->
+<!ELEMENT elemento (#PCDATA)> <!-- elemento solo testo -->
+<!ELEMENT altroElemento (#PCDATA)>
+<!ELEMENT altroPadre (#PCDATA|altroFiglio)*> <!-- elemento misto -->
+
+<!ELEMENT figlio (#PCDATA)>
+<!ELEMENT altroFiglio (#PCDATA)>
+
+<!-- dichiarazione dell'attributo: <!ATTLIST Element-name Attr-name Attr-type Attr-state default-value> -->
+<!ATTLIST padre lang ID #IMPLIED>
+<!ATTLIST figlio attribute IDREF #IMPLIED>
+<!ATTLIST elemento type CDATA #IMPLIED>
+<!ATTLIST altroElemento lang NMTOKEN #IMPLIED>
+<!ATTLIST altroPadre lang ID #IMPLIED>
+<!ATTLIST altroFiglio attribute IDREF #IMPLIED>
+
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 02/04/2021
+    Nome file: "esercizio-validazione-externalDTD.dtd"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: 
+            -	Includere all’interno di un documento XML la dichiarazione del tipo, definire internamente gli elementi e gli attributi e validare;
+            -	Inserire nel prologo di un documento XML la dichiarazione del tipo di documento e validare. Creare un file esterno con estensione .dtd prima di includerlo nel prologo XML.
+
+-->
