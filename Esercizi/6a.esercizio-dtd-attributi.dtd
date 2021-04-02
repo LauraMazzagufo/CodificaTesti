@@ -1,0 +1,34 @@
+<!ELEMENT TEI (header, facsimile?, testo+)>
+
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT testo (#PCDATA|seg)*>
+<!ELEMENT seg (#PCDATA)>
+
+<!-- dichiarazione dell'attributo: <!ATTLIST Element-name Attr-name Attr-type Attr-state default-value> -->
+<!ATTLIST header type CDATA #FIXED intestazione>
+<!ATTLIST header lang NMTOKEN #IMPLIED>
+
+<!ATTLIST facsimile source CDATA #REQUIRED>
+<!ATTLIST facsimile ref IDREFS #IMPLIED>
+
+<!ATTLIST testo id ID #REQUIRED>
+<!ATTLIST testo type CDATA #IMPLIED>
+
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 02/4/2021
+    Nome file: "esercizio-dtd-attributi.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Definire i seguenti elementi: 
+            1. root: TEI
+            2. figli:
+                -	header (obbligatorio, una volta sola)
+                -	facsimile (opzionale, una volta sola)
+                -	testo (obbligatorio, una o più volte; mixed content con possibile elemento <seg>)
+            3. attributi:
+                -	header: type (fixed, CDATA “intestazione”); lang (opzionale, NMTOKEN)
+                -	facsimile: source (obbligatorio); ref(opzionale, IDREFS)
+                -	testo: id (obbligatorio, ID), type (opzionale, contenuto testuale)
+ -->

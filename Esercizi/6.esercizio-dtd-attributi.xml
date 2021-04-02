@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 02/4/2021
+    Nome file: "esercizio-dtd-attributi.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Definire i seguenti elementi: 
+            1. root: TEI
+            2. figli:
+                -	header (obbligatorio, una volta sola)
+                -	facsimile (opzionale, una volta sola)
+                -	testo (obbligatorio, una o più volte; mixed content con possibile elemento <seg>)
+            3. attributi:
+                -	header: type (fixed, CDATA “intestazione”); lang (opzionale, NMTOKEN)
+                -	facsimile: source (obbligatorio); ref(opzionale, IDREFS)
+                -	testo: id (obbligatorio, ID), type (opzionale, contenuto testuale)
+ -->
+ <TEI>
+    <header></header>
+    <facsimile></facsimile> <!-- elemento opzionale -->
+    <testo></testo> <!-- l'elemento <testo> può essere ripetuto più volte -->
+    <testo> <!-- contenuto di tipo misto -->
+        <seg></seg>
+    </testo> 
+ </TEI>
