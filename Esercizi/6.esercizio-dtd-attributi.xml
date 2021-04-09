@@ -21,6 +21,7 @@
     <facsimile></facsimile> <!-- elemento opzionale -->
     <testo></testo> <!-- l'elemento <testo> può essere ripetuto più volte -->
     <testo> <!-- contenuto di tipo misto -->
+        Questo è un elemento misto. 
         <seg></seg>
     </testo> 
  </TEI>
