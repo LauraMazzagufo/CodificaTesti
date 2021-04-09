@@ -15,7 +15,8 @@
 
 <TEI>
     <header></header>
-    <facsimile></facsimile>
+    <facsimile></facsimile> <!-- elemento facoltativo -->
     <text></text>
-    <!-- sono elementi testuali, quindi non posso inserire altri elementi ma solo testo -->
+    <text></text>
+    <!-- sono elementi testuali, quindi non posso inserire al loro interno altri elementi, ma solo testo -->
 </TEI>
