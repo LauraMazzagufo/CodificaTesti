@@ -15,17 +15,17 @@
 <!DOCTYPE TEI SYSTEM "./7c.esercizio-validazione-externalDTD.dtd">
 
 <TEI>
-    <padre>
-        <figlio></figlio>
+    <padre color="blue">
+        <figlio attribute="blue"></figlio>
     </padre>
 
-    <elemento>Questo è un elemento testuale</elemento>
+    <elemento type="testo">Questo è un elemento testuale</elemento>
 
-    <elemento>Questo è un altro elemento testuale</elemento>
+    <elemento>Questo è un altro elemento testuale</elemento> <!-- type è un attributo #IMPLIED, quindi <elemento> può anche non contenerlo -->
 
-    <altroPadre>
+    <altroPadre id="LauraM">
         Questo è un elemento misto.
-        <altroFiglio>Testo</altroFiglio>
+        <altroFiglio ref="LauraM" attribute="nome">Testo</altroFiglio>
     </altroPadre>
 
 </TEI>

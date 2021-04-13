@@ -12,13 +12,15 @@
 <!ELEMENT figlio (#PCDATA)>
 <!ELEMENT altroFiglio (#PCDATA)>
 
+
 <!-- dichiarazione dell'attributo: <!ATTLIST Element-name Attr-name Attr-type Attr-state default-value> -->
-<!ATTLIST padre lang ID #IMPLIED>
-<!ATTLIST figlio attribute IDREF #IMPLIED>
+<!ATTLIST padre color ID #REQUIRED> <!-- ID deve essere univoco -->
+<!ATTLIST figlio attribute IDREF #IMPLIED> <!-- IDREF deve riferirsi a ID -->
 <!ATTLIST elemento type CDATA #IMPLIED>
 <!ATTLIST altroElemento lang NMTOKEN #IMPLIED>
-<!ATTLIST altroPadre lang ID #IMPLIED>
-<!ATTLIST altroFiglio attribute IDREF #IMPLIED>
+<!ATTLIST altroPadre id ID #REQUIRED> <!-- ID deve essere univoco -->
+<!ATTLIST altroFiglio ref IDREF #REQUIRED> <!-- IDREF deve riferirsi a ID -->
+<!ATTLIST altroFiglio attribute CDATA #FIXED "nome">
 
 <!-- 
     Nome: Laura

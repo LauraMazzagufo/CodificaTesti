@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- 
     Nome: Laura
     Cognome: Mazzagufo
@@ -23,26 +23,27 @@
 <!ELEMENT figlio (#PCDATA)>
 <!ELEMENT altroFiglio (#PCDATA)>
 
-<!ATTLIST padre lang ID #IMPLIED>
-<!ATTLIST figlio attribute IDREF #IMPLIED>
+<!ATTLIST padre color ID #REQUIRED> <!-- ID deve essere univoco -->
+<!ATTLIST figlio attribute IDREF #IMPLIED> <!-- IDREF deve riferirsi a ID -->
 <!ATTLIST elemento type CDATA #IMPLIED>
 <!ATTLIST altroElemento lang NMTOKEN #IMPLIED>
-<!ATTLIST altroPadre lang ID #IMPLIED>
-<!ATTLIST altroFiglio attribute IDREF #IMPLIED>
+<!ATTLIST altroPadre id ID #REQUIRED> <!-- ID deve essere univoco -->
+<!ATTLIST altroFiglio ref IDREF #REQUIRED> <!-- IDREF deve riferirsi a ID -->
+<!ATTLIST altroFiglio attribute CDATA #FIXED "nome">
 ]>
 
 <TEI>
-    <padre>
-        <figlio></figlio>
+    <padre color="blue">
+        <figlio attribute="blue">Questo è un elemento testuale</figlio>
     </padre>
 
-    <elemento>Questo è un elemento testuale</elemento>
+    <elemento type="testo">Questo è un elemento testuale</elemento> <!-- <elemento>: una o più occorrenze-->
 
-    <elemento>Questo è un altro elemento testuale</elemento>
+    <elemento>Questo è un altro elemento testuale</elemento> <!-- <altroElemento>: zero o una occorrenza -->
 
-    <altroPadre>
+    <altroPadre id="LM">
         Questo è un elemento misto.
-        <altroFiglio>Testo</altroFiglio>
+        <altroFiglio attribute="nome" ref="LM">Questo è un elemento testuale.</altroFiglio>
     </altroPadre>
 
 </TEI>
