@@ -17,10 +17,10 @@
                 -	testo: id (obbligatorio, ID), type (opzionale, contenuto testuale)
  -->
  <TEI>
-    <header></header>
-    <facsimile></facsimile> <!-- elemento opzionale -->
-    <testo></testo> <!-- l'elemento <testo> può essere ripetuto più volte -->
-    <testo> <!-- contenuto di tipo misto -->
+    <header type="intestazione" lang="it"></header> <!-- l'attributo lang è opzionale-->
+    <facsimile source="source1">Elemento testuale</facsimile> <!-- elemento opzionale -->
+    <testo id="testo1">Altro elemento testuale</testo> <!-- l'elemento <testo> può essere ripetuto più volte -->
+    <testo id="testo2"> <!-- contenuto di tipo misto -->
         Questo è un elemento misto. 
         <seg></seg>
     </testo> 
