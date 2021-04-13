@@ -5,8 +5,8 @@
 <!ELEMENT testo (#PCDATA|seg)*>
 <!ELEMENT seg (#PCDATA)> 
 
-<!-- dichiarazione dell'attributo: <!ATTLIST Element-name Attr-name Attr-type Attr-state default-value> -->
-<!ATTLIST header type CDATA #FIXED intestazione>
+<!-- dichiarazione dell'attributo: <!ATTLIST Element-name Attr-name Attr-type #Attr-state "default-value"> -->
+<!ATTLIST header type CDATA #FIXED "intestazione">
 <!ATTLIST header lang NMTOKEN #IMPLIED>
 
 <!ATTLIST facsimile source CDATA #REQUIRED>
