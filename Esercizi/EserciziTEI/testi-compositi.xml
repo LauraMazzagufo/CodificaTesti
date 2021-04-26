@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 26/04/2021
+    Nome file: "testi-compositi.xml"
+    Descrizione: Esempio del corso di Codifica di testi
+    Consegna: schema per codifica di testi compositi in XML TEI (rimpiazzando <body> con un <group>)
+-->
+
+<TEI>
+    <teiHeader> <!-- intestazione -->
+    </teiHeader>
+    <text>
+        <front> <!-- frontespizio del testo composito --> </front>
+        <group> <!-- <group raggruppa i vari testi e si sostituisce a <body> -->
+            <text>
+                <front> <!-- frontespizio del primo testo --> </front>
+                <body> <!-- corpo del primo testo --> </body>
+                <back> <!-- appendice del primo testo --> </back>
+            </text>
+            <text>
+                <front> <!-- frontespizio del primo testo --> </front>
+                <body>  <!-- corpo del primo testo --> </body>
+                <back>  <!-- appendice del primo testo --> </back>
+            </text>
+        </group>
+        <back> <!-- appendice del testo composito --> </back>
+    </text>
+</TEI>

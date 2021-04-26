@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 26/04/2021
+    Nome file: "testi-compositi.xml"
+    Descrizione: Esempio del corso di Codifica di testi
+    Consegna: schema per codifica di testi compositi in XML TEI (utilizzando <teiCorpus> come radice e un elemento <TEI> per ogni testo)
+-->
+
+<teiCorpus>
+    <teiHeader> <!-- intestazione del corpus --> </teiHeader>
+    <TEI>
+        <teiHeader></teiHeader> <!-- intestazione del primo testo -->
+        <text> <!-- inizio primo testo del corpus -->
+            <front></front>
+            <body></body>
+            <back></back>
+        </text>
+    </TEI>
+    <TEI>
+       <teiHeader></teiHeader> <!-- intestazione del secondo testo -->
+        <text> <!-- intestazione del secondo testo del corpus -->
+            <front></front>
+            <body></body>
+            <back></back>
+        </text>
+    </TEI>
+</teiCorpus>
