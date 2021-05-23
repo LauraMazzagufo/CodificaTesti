@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 23/05/2021
+    Nome file: "esercizio-marcaturaTEI-2.xml"
+    Descrizione: questo è un esercizio del corso di Codifica di testi
+    Consegna: Utilizzare puntatori, note, lista, glossario, marcare nomi, rs, term.
+    -->
+<!DOCTYPE TEI SYSTEM "./tei_all.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ricetta del tiramisù al limnoe</title>
+
+                <respStmt xml:id="LM">
+                    <resp>Codifica XML TEI a cura di</resp>
+                    <name type="person">Laura Mazzagufo</name> <!-- <persName> si usa quando intende specificare anche qual è il nome, quale il cognome ecc. -->
+                </respStmt>
+            </titleStmt>
+
+            <extent>ca. 3000 caratteri</extent> <!-- elemento facoltativo, descrive l'ampiezza del documento-->
+
+            <publicationStmt> <!-- elemento obbligatorio -->
+                <authority>Laura Mazzagufo</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>maggio 2021</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+
+            <sourceDesc> <!-- elemento obbligatorio -->
+               <p>Born digital</p> <!-- Dalle linee guida: "<sourceDesc> describes the source(s) from which 
+                                    an electronic text was derived or generated [...],
+                                    or a phrase such as "born digital" for a text which has no previous existence."-->
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5.</p>
+        </encodingDesc>
+
+    </teiHeader>
+
+    <text>
+        <front>
+        </front>
+
+        <body>
+            <div type="section" n="1" xml:id="introduzione">
+                <head>Tiramisù al limone: un dessert semplice e gustoso</head>
+                <p>Tanto elementare quanto goloso e apprezzato:
+                il tiramisù<ptr target="https://www.cucchiaio.it/ricetta/ricetta-tiramisu/"/> è il dolce italiano per eccellenza, 
+                che unisce la Penisola da Nord a Sud. Solo cinque ingredienti<ptr target="#ingredienti"/> sono necessari
+                per realizzare la base del dolce: uova, mascarpone, savoiardi, zucchero, caffè;
+                si possono aggiungere – a piacere – cacao amaro e cioccolata.</p>
+                <p>Ma in questa occasione proponiamo una variante più fresca ed estiva, adatta alla bella stagione:
+                il tiramisù al limone. Di seguito è spiegato il <ref target="#procedimento">procedimento</ref> con qualche
+                <ref target="#consigli">consiglio</ref> e un piccolo <ref target="#glossario">glossario di cucina</ref>. 
+                Piccola accortezza: usate i
+                <ref target="http://agricoltura.regione.campania.it/tipici/limone-amalfi.html">limoni di <placeName>Amalfi</placeName></ref>
+                per un gusto ancora più intenso.</p>
+            </div>
+
+            <div type="section" n="2" xml:id="ingredienti">
+                <list type="simple">
+                <head>Ingredienti</head>
+                <item>200 gr di savoiardi<ptr target="#cnsg-mascarp"/>;</item>
+                <item>400 gr di mascarpone;</item>
+                <item>4 uova (4 tuorli e 2 albumi) freschissime<ptr target="#cnsg-uova"/>;</item>
+                <item>150 gr di zucchero a velo;</item>
+                <item>70 gr di acqua;</item>
+                <item>50 gr di zucchero bianco;</item>
+                <item>50 gr di limoncello;</item>
+                <item>1 limone d’Amalfi (o comunque non trattato<note n="1" place="bottom" resp="#LM">
+                La buccia dei limoni trattati con pesticidi o altri prodotti chimici non può essere utilizzata
+                nei dolci e nella preparazione di altre ricette.</note>).</item>
+                </list>
+            </div>
+
+            <div type="section" n="3" xml:id="procedimento">
+                <head>Procedimento</head>
+                <p>Nel preparare la crema al mascarpone<ptr target="#gl-crema"/>, dividete con molta precisione
+                gli albumi dai tuorli (non devono esserci tracce di tuorlo per montare bene gli albumi).
+                Montare gli albumi a neve e tenere da parte, preferibilmente in frigorifero. 
+                Unire i tuorli con lo zucchero e sbattere bene finché quest’ultimo non sarà del tutto sciolto;
+                poi montare con le fruste elettriche per ottenere un composto spumoso. Prendete un cucchiaio di 
+                mascarpone<ptr target="#cnsg-mascarp"/> e stemperate il composto a base di tuorli; poi aggiungete
+                un po’ di mascarpone alla volta, per ottenere una crema liscia e senza grumi.
+                Solo alla fine, aggiungere anche gli albumi montati (sempre un po’ alla volta
+                per non smontare la crema e solo con movimenti omogenei, mescolando dal basso verso l’alto).
+                Riporre la crema in frigorifero.</p>
+                <p>Nel frattempo, dedicarsi alla bagna al limoncello, che si realizza portando ad ebollizione l’acqua
+                con lo zucchero e la scorza del limone, lasciando cuocere per un minuto e poi lasciando raffreddare
+                lo sciroppo; infine unire il limoncello.</p>
+                <p>Inzuppare leggermente i savoiardi nella bagna e adagiarli sul fondo di una teglia o un bicchiere
+                da portata <ptr target="#cnsg-pennello"/>.
+                Dopo un primo strato di savoiardi, adagiare uno strato di crema al mascarpone (e una grattugiata
+                di scorza di limone); ripetere alternando savoiardi e crema per almeno quattro strati.</p>
+                <p>Terminare con un’ulteriore grattugiata di scorza di limone e riporre in frigorifero per almeno
+                tre ore prima di servire.</p>
+            </div>
+
+            <div type="section" n="4" xml:id="consigli">
+                <list type="instruction" rend="numbered">
+                <head>Consigli per l'esecuzione</head>
+                <item xml:id="cnsg-uova">Le uova usate per fare il tiramisù devono sempre essere freschissime.</item>
+                <item xml:id="cnsg-mascarp">Per un risultato migliore usare un mascarpone a temperatura ambiente:
+                estrarlo dal frigorifero almeno mezz'ora prima della preparazione del dolce.</item>
+                <item xml:id="cnsg-pennello">Per evitare che i savoiardi si ammorbidiscano troppo, è possibile spennellarli
+                con un <ref target="#gl-pennello">pennello da cucina</ref>, invece di inzupparli direttamente nella bagna.</item>
+                </list>
+            </div>
+
+            <div type="section" n="5" xml:id="glossario">
+                <list type="gloss" rend="bulleted">
+                <head>Piccolo glossario di cucina</head>
+                <label xml:id="gl-crema">Crema al mascarpone</label>
+                <item>Vero e proprio dessert al cucchiaio, usata per farcire dolci o accompagnare biscotti secchi.</item>
+                <label xml:id="gl-pennello">Pennello da cucina</label>
+                <item>Detto anche <term ref="#gl-pennello">pennello da forno</term>, è uno strumento
+                fatto con materiali del tutto atossici.</item>
+                <label>Savoiardi</label>
+                <item>Biscotti dolci, dalla forma allungata, che prendono il nome dalla casata storica
+                dei <persName><roleName>Conti di</roleName><placeName>Savoia</placeName></persName>.
+                <ref target="https://it.wikipedia.org/wiki/Biscotto_savoiardo">Ulteriori informazioni</ref></item>
+                </list>
+            </div>
+        </body>
+
+        <back>
+        </back>
+    </text>
+</TEI>
