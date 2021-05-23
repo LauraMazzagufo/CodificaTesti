@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 08/05/2021
+    Nome file: "primaMarcaturaTEI.xml"
+    Descrizione: questo è un esercizio del corso di Codifica di testi
+    Consegna: Marcare un testo plain text di circa 3000 caratteri a piacere:
+            -	inserire prologo XML
+            -	marcare la struttura usando gli elementi fin qui descritti, in particolare marcare tutti i paragrafi usando <p> e la struttura editoriale usando <div>
+            -	verificare che sia ben formato con xmllint
+            -	salvare il file xml su github.
+-->
+<!DOCTYPE TEI SYSTEM "./tei_all.dtd"><!-- dichiarazione DTD: scaricata dal sito TEI, scelta "TEI All" per testare, ma forse meglio "TEI Lite" -->
+
+<TEI xmlns="http://www.teic.org/ns/1.0"> <!-- radice TEI con namespace -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mandolinfiore: una fiaba di Calvino in digitale</title>
+
+                <respStmt>
+                    <resp>Conversione XML TEI a cura di</resp>
+                    <name type="person">Laura Mazzagufo</name> <!-- <persName> si usa quando intende specificare anche qual è il nome, quale il cognome ecc. -->
+                </respStmt>
+            </titleStmt>
+
+            <extent>ca. 3000 caratteri</extent> <!-- elemento facoltativo, descrive l'ampiezza del documento-->
+
+            <publicationStmt> <!-- elemento obbligatorio -->
+                <authority>Laura Mazzagufo</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>maggio 2021</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+
+            <sourceDesc> <!-- elemento obbligatorio -->
+                <biblStruct> <!-- usato elemento <biblStruct> invece di <bibl> -->
+                    <analytic> <!-- capitolo di un libro -->
+                        <author>Calvino, Italo</author> 
+                        <title level="a">Mandorlinfiore</title>
+                    </analytic>
+                    <monogr> <!-- descrizione da cui è tratto il capitolo -->
+                        <author>Calvino, Italo</author> <!-- è necessario ripetere il nome dell'eutore e è lo stesso dell'analytic? -->
+                        <title level="m" type="main">Fiabe italiane</title>
+                        <title level="m" type="sub">raccolte dalla tradizione popolare durante gli ultimi cento anni e trascritte in lingua dai vari dialetti da <name>Italo Calvino</name></title>
+                        <imprint>
+                            <pubPlace>Milano</pubPlace>
+                            <publisher>Mondadori</publisher>
+                            <date>1995</date>
+                        </imprint>
+                        <extent>3 volumi</extent>
+                        <biblScope unit="volume">2</biblScope> <!-- dalle linee guida: "It is now considered good practice to supply this element as a sibling (rather than a child) of imprint, since it supplies information which does not constitute part of the imprint."-->
+                        <biblScope unit="page" from="786" to="787">1236: 786–787</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5. La trascrizione del testo è letterale; nessun intervento sul testo.</p>
+        </encodingDesc>
+
+        <revisionDesc status="draft"> <!-- cambiare in "proposed" o "submitted"-->
+                 <list>
+                     <item>
+                     <date when="2021-05-08">8 maggio 2021</date>Prima bozza</item>
+                     <item>
+                    <date when="2021-05-23">23 maggio 2021</date>Revisione</item>
+                    </list>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <text>
+        <front>
+        </front>
+
+        <body>
+            <div type="chapter" n="112">
+                <head type="">Abruzzo</head> <!-- la fiaba codificata viene dalla zona geografica dell'Abruzzo -->
+                <p>C'era una moglie e un marito, e stava per nascergli un bambino.
+                Il padre andò alla porta, a vedere chi passava per via, perché il primo che sarebbe passato,
+                così sarebbe diventato il figlio. Passarono delle donne cattive, e il padre gridò alla moglie:
+                <said aloud="true" direct="true">- Non farlo nascere ora, non farlo nascere ora!</said>
+                Passarono dei ladri e il padre ancora gridò: 
+                <said aloud="true" direct="true">- Non farlo nascere ora! Non farlo nascere ora!</said>
+                Poi passò il Re e in quel momento nacque il bambino; ed era un maschio.
+                Allora padre, madre, nonna e zie si misero a gridare:
+                <said aloud="true" direct="true">- È nato il Re, è nato il Re! </said>
+                Il Re udì e volle entrare in casa. Domandò, e gli spiegarono ogni cosa.
+                Allora il Re disse <said  direct="false">che il bambino voleva prenderselo con sé e allevarlo lui</said>.
+                Il padre e la madre lo benedissero e glielo diedero. Per strada il Re ci ripensò.
+                <said aloud="false" direct="true">"Perché devo allevare uno che non s'augurerà altro che la mia morte?"</said>
+                Trasse un coltello, lo piantò in gola al bambino e lo lasciò in mezzo a un campo di mandorli in fiore.
+                Il giorno dopo, passarono di là due mercanti. Trovarono il bambino ancora vivo, gli fasciarono la ferita
+                e uno d'essi lo portò a casa a sua moglie. Erano marito e moglie ricchi e senza figli
+                e presero a volergli molto bene. Lo chiamarono <name type="character">Mandorlinfiore</name>.
+                <name type="character">Mandorlinfiore</name> crebbe bello e svelto. 
+                Quando, inaspettatamente, al mercante nacque un figlio suo.
+                Un giorno, questo figlio era già un ragazzetto, giocando con <name type="character">Mandorlinfiore</name> prese
+                a litigare e gli diede del bastardo. <name type="character">Mandorlinfiore</name> andò a lagnarsene con la madre, 
+                e così apprese la verità sul suo ritrovamento. Allora volle andarsene da casa
+                e inutili furono le insistenze del mercante e della moglie. Cammina cammina, arrivò alla città del Re che l'aveva ferito
+                e abbandonato. Il Re, senza riconoscerlo, vedendo un giovane così istruito, lo pigliò per segretario.
+                Il Re aveva una figlia bella come il sole, chiamata <name type="character">Belfiore</name>, e il giovane se ne innamorò.
+                Quando il padre s'accorse che la figlia faceva all'amore con il segretario,
+                siccome gli seccava di restar senza segretario, preferì mandare la figlia ospite da un altro Re suo fratello.
+                <name type="character">Mandorlinfiore</name> per il dispiacere s'ammalò, e il Re andando a visitarlo a letto,
+                vide la cicatrice che egli aveva al collo. Si ricordò del bambino che egli aveva accoltellato,
+                e domandò al segretario dove fosse nato.
+                <said aloud="true" direct="true">- Sono stato trovato in un campo di mandorli in fiori,</said> - disse il giovane.
+                Allora il Re pensò di farlo morire. Gli disse <said  direct="false">che doveva portare una lettera
+                a quell'altro Re suo fratello</said>, e <name type="character">Mandorlinfiore</name> partì.
+                La lettera diceva che il giovane doveva essere subito impiccato.<!-- (come) codificare? -->
+                Ma <name type="character">Belfiore</name>, avvertita dell'arrivo dell'innamorato, lo aspettava,
+                e lo fece entrare di nascosto da una porticina segreta.
+                <pb n="787"/>
+                Quando furono soli, <name type="character">Belfiore</name> voleva leggere la lettera che il padre mandava allo zio,
+                ma <name type="character">Mandorlinfiore</name> non volle perché aveva promesso di darla in mano al destinatario.
+                Ma quando il giovane s'addormentò, <name type="character">Belfiore</name> gli prese la lettera e la lesse.
+                Così scoperse l'agguato teso dal padre, e insieme cercarono il modo di farsene beffa.
+                Sostituirono la lettera con un'altra in cui si diceva che il giovane doveva essere sposato immediatamente
+                a <name type="character">Belfiore</name>, e <name type="character">Mandorlinfiore</name> tornò fuori 
+                per la porticina segreta, andò a comprarsi abiti principeschi e una carrozza dorata e così ritornò a portare la lettera.
+                Lo zio chiamò la nipote, e le disse che per ordine di suo padre doveva darle marito;
+                e <name type="character">Belfiore</name> fece finta di cascare dalle nuvole.
+                Si fecero le nozze; e quando il Re lo seppe, gli prese tanta rabbia che morì.
+                </p>
+            </div>
+        </body>
+
+        <back>
+        </back>
+    </text>
+</TEI>
