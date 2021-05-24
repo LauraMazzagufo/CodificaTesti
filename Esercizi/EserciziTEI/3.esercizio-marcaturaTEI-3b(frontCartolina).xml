@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 23/05/2021
+    Nome file: "esercizio-marcaturaTEI-3.xml"
+    Descrizione: questo è un esercizio del corso di Codifica di testi
+    Consegna: Documenti di tipo e genere diversi
+            - 3a: codificare usando gli opportuni elementi TEI un articolo di rivista
+            - 3b: codificare usando gli opportuni elementi TEI una cartolina, descrivendone il front.
+    -->
+<!DOCTYPE TEI SYSTEM "./tei_all.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edizione digitale di una cartolina</title>
+
+                <respStmt>
+                    <resp>Codifica XML TEI a cura di</resp>
+                    <name type="person" xml:id="LM">Laura Mazzagufo</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt> <!-- elemento obbligatorio -->
+                <authority>Laura Mazzagufo</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>maggio 2021</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+
+           <sourceDesc> <!-- elemento obbligatorio -->
+                <bibl xml:id="cartolina">
+                    <author></author>
+                    <title type="custom" resp="#LM">Guiglia - Stazione Climatica - Panorama</title>
+                    <biblScope unit="page">1</biblScope>
+                    <date>1918</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5.</p>
+        </encodingDesc>
+
+        <revisionDesc status="draft"> <!-- cambiare in "proposed" o "submitted"-->
+                 <list>
+                     <item resp="#LM">
+                     <date when="2021-05-09">09 maggio 2021</date> Prima bozza</item>
+                     <item resp="#LM">
+                    <date when="2021-05-24">24 maggio 2021</date> Revisione</item>
+                    </list>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <text type="cartolina">
+        <front></front>
+        <body>
+            <div type="fronte">
+                <figure>
+                    <head>Guiglia - Stazione Climatica - Panorama</head>
+                    <graphic url="3.7694-226F.jpg"/>
+                    <figDesc>L'immagine rappresenta un panorama in cui è ritratta la stazione climatica di
+                    <placeName>Guiglia</placeName>, comune italiano in provincia di <placeName>Modena</placeName>.</figDesc>
+                </figure>
+            </div>
+        </body>
+        <back></back>
+    </text>
+
+</TEI>

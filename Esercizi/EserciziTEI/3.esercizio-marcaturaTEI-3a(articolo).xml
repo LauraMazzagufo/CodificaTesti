@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 23/05/2021
+    Nome file: "esercizio-marcaturaTEI-3.xml"
+    Descrizione: questo è un esercizio del corso di Codifica di testi
+    Consegna: Documenti di tipo e genere diversi
+            - 3a: codificare usando gli opportuni elementi TEI un articolo di rivista
+            - 3b: codificare usando gli opportuni elementi TEI una cartolina, descrivendone il front.
+    -->
+<!DOCTYPE TEI SYSTEM "./tei_all.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Composer’s Mailbox: edizione digitale</title>
+
+                <respStmt>
+                    <resp>Codifica XML TEI a cura di</resp>
+                    <name type="person" xml:id="LM">Laura Mazzagufo</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt> <!-- elemento obbligatorio -->
+                <authority>Laura Mazzagufo</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>maggio 2021</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+
+           <sourceDesc> <!-- elemento obbligatorio -->
+                <biblStruct >
+                    <analytic> <!-- articolo di una rivista scientifica -->
+                        <author>
+                            <persName xml:id="FR">Francisco Rocca</persName>
+                            <orgName>Fondazione Giorgio Cini, <placeName>Venezia</placeName></orgName>
+                        </author>
+                        <author>
+                            <persName xml:id="AC">Angela Carone</persName>
+                            <orgName>Fondazione Giorgio Cini, <placeName>Venezia</placeName></orgName>
+                        </author>
+                        <title level="a">The Composer’s Mailbox: Documents from the Musical Archives of the Fondazione Giorgio Cini</title>
+                    </analytic>
+                    <monogr> <!-- descrizione della rivista da cui è tratto il capitolo -->
+                        <editor>Paolo Dal Molin</editor>
+                        <title level="j" type="main">Archival Notes</title>
+                        <title level="j" type="sub">Sources and Research from the Institute of Music</title>
+                        <imprint>
+                            <distributor>Fondazione Giorgio Cini</distributor>
+                            <pubPlace>Venezia</pubPlace>
+                            <date when="03-11-2016">(2016)</date>
+                        </imprint>
+                        <biblScope unit="volume" n="1">No 1</biblScope>
+                        <biblScope unit="page" from="171" to="192">pp. 171-92</biblScope>
+                    </monogr>
+                </biblStruct>
+
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5.</p>
+        </encodingDesc>
+
+        <revisionDesc status="draft"> <!-- cambiare in "proposed" o "submitted"-->
+                 <list>
+                     <item resp="#LM">
+                     <date when="2021-05-09">09 maggio 2021</date> Prima bozza</item>
+                     <item resp="#LM">
+                    <date when="2021-05-24">24 maggio 2021</date> Revisione</item>
+                    </list>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <text>
+        <front>
+            <pb n="171"/>
+            <div type="image">
+                <figure>
+                    <head resp="#LM">Busta di una lettera indirizzatta ad <persName type="composer">Alfredo Casella</persName></head>
+                    <figDesc resp="#LM">L'immagine, allineata a sinistra del testo, mostra il fronte di una busta da lettere, con
+                    il nome del destinatario, <persName type="composer">Alfredo Casella</persName>, ben visibile. L'indirizzo originario
+                    è stato cancellato e sostituito con un altro, sempre a <placeName>Venezia</placeName>. Sulla superficie della busta
+                    sono apposti due francobolli e il timbro postale.
+                    </figDesc>
+                </figure>
+            </div>
+            <div type="introduction">
+                <p>The exhibit <title>The Composer’s Mailbox. Documents from the <orgName>Musical Archives of the Fondazione Giorgio Cini</orgName></title>,
+                curated by <persName ref="#FR">Francisco  Rocca</persName> and <persName ref="AC">Angela  Carone</persName>,
+                was held at the <orgName>Fondazione Giorgio Cini</orgName> from <date from="2014-06-27" to="2014-09-30">27 June to 30 September 2014</date>.
+                Inaugurated on the occasion of the conference <title>Towards a Network of European Archives of Twentieth-Century Music.
+                Musicians’ Correspondence and Interaction between Archives</title>, it brought together a selection of epistolary documents
+                flanked by working materials, musical manuscripts, press clippings and photographs. Six thematic sections provide evidence
+                of the wide range of information that can be gleaned from correspondence materials. From <persName type="composer">Gian Francesco
+                Malipiero</persName>’s reflections on his own correspondence to the organisation of the <date when="1964">1964</date> <orgName>Maggio Musicale
+                Fiorentino</orgName>, directed by <persName type="composer">Roman Vlad</persName>, or again the process that led to
+                the creation of <persName type="composer">Alfredo Casella</persName>’s ballet <title>La giara</title>, the documents displayed
+                various functions of the letter as a means of communication, as well as the links that emerge between the various correspondences
+                conserved in the archives of the <orgName>Istituto per la Musica</orgName>.</p>
+                <p>The following paragraphs reproduce a selection of the documents displayed (indicated henceforth as FIGURES) 
+                together with the texts from the six sections of the exhibit.</p>
+            </div>
+        </front>
+                
+        <body>
+            <div type="section" n="1" xml:id="section1">
+                <pb n="172"/>
+                <head>1. RUMMAGING THROUGH OLD PAPERS</head>
+                <p>In the years <date from="1945" to="1968">1945–1968</date> <persName type="composer">Gian Francesco Malipiero</persName>
+                kept a daily record of his voluminous correspondence in four notebooks <ref target="#CAT.1">[CAT.  1]</ref>, <ref target="#CAT.2">[CAT. 2]</ref>
+                <ref target="#FIG.1">[FIGURE  1]</ref>. These documents testify to the scope of his contacts and the care with which
+                the composer kept up his epistolary exchanges. The letters and telegrams run into thousands, all scrupulously catalogued,
+                and he would go back over them years later in order to <quote>‘unearth episodes of interest to their discoverer  [...]’</quote>
+                <ref target="#CAT.3">[CAT.  3]</ref>. These explorations in his own archive were the origin of <title>‘Ai  direttori  d’orchestra’</title>,
+                <quote>‘posthumous  answers’</quote> which <persName>Malipiero</persName> wrote to letters he had received in the past. 
+                These ironic or slightly petulant missives immediately attracted the <quote>‘mordant  curiosity, always on the lookout for scandal’</quote> of 
+                <persName>Massimo  Mila</persName>, to whom Malipiero entrusted the typescript. In a letter dated <date when="1965-07-14">14 July 1965</date>,
+                the critic wrote: <quote>‘[...] the kind of scandal-based curiosity which impelled me to read them as soon as I opened the package
+                should perhaps put us on our guard. It is not standard practice to make private letters public’</quote> <ref target="CAT.4">[CAT.  4]</ref>.
+                The letters displayed in this section are from six famous</p> <!-- problema di gerarchie: 
+                                                                                in teoria qui il paragrafo continua ma c'è l'immagine,
+                                                                                codificando solo con <graphic> perdo la descrizione
+                                                                                -->
+                       
+                <div type="image">
+                    <figure xml:id="FIG.1">
+                        <head>FIGURE 1 <ref target="#CAT.1">[CAT. 1]</ref><persName type="composer">Malipiero</persName>’s register of correspondence</head>
+                        <figDesc resp="#LM">L'immagine, nella metà inferiore della pagina, mostra due pagine affiancate di un quaderno usato da 
+                        <persName type="composer">Gian Francesco Malipiero</persName> come registro della propria corrispondenza.
+                        </figDesc>
+                    </figure>
+                </div>
+
+                <pb n="173"/>
+            </div>
+        </body>
+                
+        <back>
+            <div type="section" n="3">
+                <pb n="191"/>
+                <head>CATALOG OF EXHIBITED DOCUMENTS</head>
+                <list>
+                    <head>1. RUMMAGING THROUGH OLD PAPERS<ptr target="#section1"/></head>
+                    <label xml:id="CAT.1">CAT. 1</label>
+                    <item><persName type="composer">Gian Francesco Malipiero</persName>’s register of correspondence
+                    (<date from="1945-06" to="1950-06">June 1945 – June 1950</date>). Notebook.</item>
+                    <label xml:id="CAT.2">CAT. 2</label>
+                    <item><persName type="composer">Gian Francesco Malipiero</persName>’s register of correspondence
+                    (<date from="1950-06" to="1957-10">June 1950 – October 1957</date>). Notebook.</item>
+                    <label xml:id="CAT.3">CAT. 3</label>
+                    <item>
+                        <biblStruct>
+                            <analytic>
+                                <author>Gian Francesco Malipiero,</author> 
+                                <title type="main">[‘Ai direttori d’orchestra (risposte postume)’].</title>
+                                <title type="sub">Typescript with autograph annotations,</title>
+                            </analytic>
+                            <monogr>
+                                <author>Gian Francesco Malipiero,</author>
+                                <title level="m">Il filo d’Arianna. Saggi e fantasie</title>
+                                <imprint>
+                                    <publisher>Giulio Einaudi editore</publisher>
+                                    <pubPlace>Torino</pubPlace>
+                                    <date when="1966">1966</date>
+                                </imprint>
+                                <biblScope unit="page" from="185" to="296">pp. 285-296</biblScope>
+                            </monogr>
+                        </biblStruct>
+                    </item>
+                    <label xml:id="CAT.4">CAT. 4</label>
+                    <item>Letter from <persName>Massimo Mila</persName> to <persName type="composer">Gian Francesco Malipiero</persName>
+                    (<placeName>Turin</placeName>, <date when="1965-07-14">14 July 1965</date>). Manuscript, 2 pp.</item>
+                    <!-- sostituire con bibl e <title level="u"???> -->
+                </list>
+            </div>
+        </back>
+    </text>
+
+</TEI>
