@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Nome: Laura
+    Cognome: Mazzagufo
+    Data: 01/06/2021
+    Nome file: "esercizio-codifica-lettera-immagine.xml"
+    Descrizione: questo è un esercizio del corso di Codifica di testi
+    Consegna: Codificare la lettera di Bellini del precedente esercizio,
+              utilizzando il tagset facsimile e il collegamento completo testo-immagine.
+    -->
+<!DOCTYPE TEI SYSTEM "./tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Vincenzo Bellini a Carlo Pepoli, in Puteaux, 26 giugno 1834</title>
+                <author>Vincenzo Bellini</author>
+
+                <respStmt>
+                    <resp>transcription by</resp>
+					<name xml:id="GS">Graziella Seminara</name>
+                </respStmt>
+            </titleStmt>
+
+            <editionStmt>
+				<edition>Digital Edition
+					<date when="2021-05">May 2021</date>
+				</edition>
+				<respStmt>
+					<resp>Digital edition project coordineted by</resp>
+					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
+					<name xml:id="DS">Daria Spampinato</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding by</resp>
+					<name xml:id="LM">Laura Mazzagufo</name>
+				</respStmt>
+			</editionStmt>
+
+            <publicationStmt>
+                <authority>Laura Mazzagufo</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>maggio 2021</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author key="VB">Vincenzo Bellini</author> 
+                        <title level="a">Vincenzo Bellini a Carlo Pepoli, in Puteaux, 26 giugno 1834</title>
+                    </analytic>
+                    <monogr>
+                        <editor><ptr target="#GS"/>Graziella Seminara</editor>
+                        <title level="m" type="main">Vincenzo Bellini. Carteggi</title>
+                        <title level="m" type="sub">Edizione critica a cura di <name ref="#GS">Graziella Seminara</name></title>
+                        <imprint>
+                            <pubPlace>Firenze</pubPlace>
+                            <publisher>Olschki</publisher>
+                            <date when="2017">2017</date>
+                        </imprint> <!-- inserire anche la collana di cui fa parte (Historiae musicae cultores, CXXXI) -->
+                        <biblScope unit="page" from="368" to="368">pp. VI + 622: 368</biblScope> <!-- ricontrollare <citedRange> -->
+                    </monogr>
+                </biblStruct>
+
+                <msDesc> <!-- manuscript description -->
+                    <msIdentifier> <!-- elemento obligatorio -->
+                        <settlement>Catania</settlement> 
+                        <repository xml:id="I-CATm" ref="https://web.archive.org/web/20110123223742/http://www.comune.catania.it/la_citt%C3%A0/culture/monumenti-e-siti-archeologici/musei/museo-civico-belliniano/">Museo Civico Belliniano</repository> 
+                        <idno>LL1.16</idno> 
+                    </msIdentifier>
+
+                    <msContents>
+                        <msItem>
+							<author key="VB">Vincenzo Bellini</author>
+							<title xml:lang="it">
+								<persName key="VB" role="composer">Vincenzo Bellini</persName> a	
+								<persName key="CP">Carlo Pepoli</persName>, in <placeName>Puteaux</placeName>,
+								<date when="1834-06-26">26 giugno 1834</date>
+							</title>
+							<textLang mainLang="it" otherLangs="fr">italiano di inizio Ottocento con indirizzo in francese</textLang>
+						</msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>     
+                                <support>
+                                    <material>Carta sottile</material>
+                                </support>
+
+                                <extent>1 folio
+                                    <dimensions scope="all" type="folio" unit="mm">
+                                        <height>135</height>
+                                        <width>204</width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+
+                </msDesc>
+
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5.</p>
+        </encodingDesc>
+
+        <revisionDesc status="draft"> <!-- cambiare in "proposed" o "submitted"-->
+                 <list>
+                    <item>
+                     <date when="2021-05-16">16 maggio 2021</date>Prima bozza
+                    </item>
+                    <item>
+                     <date when="2021-05-24">24 maggio 2021</date>Revisione
+                    </item>
+                    <item>
+                     <date when="2021-06-09">09 giugno 2021</date>Revisione
+                    </item>
+                    </list>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <facsimile> 
+		<surface n="1" xml:id="LL1.16_0001" start="#LL1.16_page-1" ulx="0" uly="0" lrx="1264" lry="1637">
+			<graphic url="4./4.LL1.16_0001.jpg" width='1265px' height='1639px'/>
+            <!-- collegamento per zone (corrispondenti alle righe) -->
+			<zone ulx="43" uly="28" lrx="1182" lry="110" rendition="Line" xml:id="LL1.16_0001_line1"/>
+			<zone ulx="915" uly="103" lrx="1224" lry="214" rendition="Line" xml:id="LL1.16_0001_line2"/>
+			<zone ulx="221" uly="185" lrx="925" lry="286" rendition="Line" xml:id="LL1.16_0001_line3"/>
+			<zone ulx="325" uly="338" lrx="1223" lry="447" rendition="Line" xml:id="LL1.16_0001_line4"/>
+			<zone ulx="162" uly="475" lrx="1179" lry="610" rendition="Line" xml:id="LL1.16_0001_line5"/>
+			<zone ulx="169" uly="625" lrx="1136" lry="752" rendition="Line" xml:id="LL1.16_0001_line6"/>
+			<zone ulx="147" uly="784" lrx="1135" lry="907" rendition="Line" xml:id="LL1.16_0001_line7"/>
+			<zone ulx="144" uly="942" lrx="1221" lry="1102" rendition="Line" xml:id="LL1.16_0001_line8"/>
+			<zone ulx="143" uly="1105" lrx="1161" lry="1228" rendition="Line" xml:id="LL1.16_0001_line9"/>
+			<zone ulx="125" uly="1250" lrx="1233" lry="1380" rendition="Line" xml:id="LL1.16_0001_line10"/>
+			<zone ulx="137" uly="1380" lrx="1234" lry="1479" rendition="Line" xml:id="LL1.16_0001_line11"/>
+			<zone ulx="129" uly="1480" lrx="1151" lry="1549" rendition="Line" xml:id="LL1.16_0001_line12"/>
+			<zone ulx="682" uly="1535" lrx="1210" lry="1609" rendition="Line" xml:id="LL1.16_0001_line13"/>
+		</surface>
+    </facsimile>
+
+    <text type="letter" n="LL1.16">
+        <front>
+            <!-- per l'esercizio traascrivo solo un frammento del corpo della lettera -->
+        </front>
+
+        <body>
+            <pb n="1" xml:id="LL1.16_page-1" facs="#LL1.16_0001"/>
+            <div type="letter-opener" xml:lang="fr">
+                <dateline>
+                    <lb n="1" facs="#LL1.16_0001_line1"/>
+                        <date when="06-26">Juin 26</date>: 
+                        <address>
+                            <addrLine>
+                                <placeName>Puteau</placeName>
+                            </addrLine>
+                            <addrLine>
+                                – <placeName>19 bis rampe</placeName>
+                            </addrLine>
+                    <lb n="2" facs="#LL1.16_0001_line2"/>
+                            <addrLine>
+                                de <placeName><hi rend="underline">Neuilly</hi></placeName>
+                            </addrLine>
+                        </address>
+                </dateline>
+            </div>
+
+            <div type="letter-body" xml:lang="it">
+                <salute rend="align(center)">
+                    <lb  n="3" facs="#LL1.16_0001_line3"/>
+                    Mio caro <persName key="CP">Carluccio</persName>
+                </salute>
+                
+                <ab type="paragraph"> <!-- non uso <p> perché la fine del paragrafo non corrisponde con una nuova riga -->
+                    <s>
+                    <lb n="4" facs="#LL1.16_0001_line4"/>
+                    avendo steso l’intero <term subtype="music-term">duetto</term> 
+                    <lb n="5" facs="#LL1.16_0001_line5"/>
+                    e mancando in esso qualche 
+                    <lb n="6" facs="#LL1.16_0001_line6"/>
+                    cosetta, desidererei che tu
+                    <lb n="7" facs="#LL1.16_0001_line7"/>
+                    t’incommodassi a venire à 
+                    <lb n="8" facs="#LL1.16_0001_line8"/>
+                    <placeName>Puteau</placeName> per tutto fissare, e
+                    <lb n="9" facs="#LL1.16_0001_line9"/>
+                    nell’istesso tempo darmi la 
+                    <lb n="10" facs="#LL1.16_0001_line10"/>
+                    <term subtype="music-term">sortita</term> di 
+                    <persName>Rubini</persName>, se è <w>termi
+                    <lb n="11" facs="#LL1.16_0001_line11"/>
+                    nata</w>.</s><s>T’aspetto in qual giorno
+                    <lb n="12" facs="#LL1.16_0001_line12"/>
+                    ed in qual’ora vorrai.</s>
+                </ab>
+
+            </div>
+
+            <div type="letter-closer" xml:lang="it">
+                <salute>
+                    - Addio
+                </salute>
+                    <lb n="13" facs="#LL1.16_0001_line13"/>
+                <signed>
+                    Il tuo <persName key="VB"> <hi rend="underline">Vincenzillo</hi></persName>
+                </signed>
+
+            </div>
+        </body>
+
+        <back>
+        </back>
+    </text>
+</TEI>
