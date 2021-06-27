@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "./tei_all.dtd"> <!-- REMINDER: trovare .dtd più calzante di "tei-all" -->
+
+<!-- REMINDER:
+testo scelto per la codifica:
+MORFOLOGIA, PERICOPE 1		-> ATTENZIONE! VEDI PDF "MORFOLOGIA NEW": INDICATO COME PARAGRAFO 1, PERICOPI 011, 012, 013!
+P.1
+P.2 (prima zona)
+P.3 (seconda zona)
+testo francese + traduzione italiana
+rapporto immagine-testo (evidenziare la particolarità del nostro testo)
+-->
+
+
+<!-- LAVORO SU TEIHEADER -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> <!-- AGGIUNTO NAMESPACE DI DEFAULT -->
+    <teiHeader>
+        <fileDesc>
+			<titleStmt>
+				<title>Morfologia: paragrafo 1. Edizione digitale</title>
+				<author>Ferdinand de Saussure</author><!-- INSERIRE REF (ache riga 122)? es: <author ref="TEI-ListPerson.xml#VB">Vincenzo Bellini</author> -->
+				<respStmt>
+					<resp>Codifica a cura di</resp> <!-- descrizioni in italiano (inglese?) -->
+					<name xml:id="CF">Caterina Farina</name> <!-- ref giusto? -->
+					<name xml:id="LM">Laura Mazzagufo</name> <!-- ref giusto? -->
+				</respStmt>
+			</titleStmt>
+
+			<editionStmt>
+				<edition>Edizione digitale conforme alle linee guida TEI (P5)
+					<date when="2021-06">Giugno 2021</date>
+				</edition>
+				<respStmt>
+					<resp>Edizione digitale coordinata da</resp>
+					<name ref="#AMDG">Angelo Mario Del Grosso</name>
+					<name ref="#SP">Silvia Piccini</name>
+				</respStmt>			
+			</editionStmt>
+
+			<extent> <!-- OPZIONALE (tenere?) -->
+				<measure unit="pages" quantity="3">Circa 3 pagine della fonte primaria</measure>
+				<measure unit="pericopes" quantity="1">Primo paragrafo (pericopi 011, 012, 013)</measure>
+				<measure unit="KB" quantity="15">Circa 15 KB</measure> <!-- rivedere la dimensione finale -->
+			</extent> 
+
+			<publicationStmt>
+				<authority>Università di Pisa</authority> <!-- al posto di <publisher> ? CFR linee guida: "Where a text is not considered formally published, but is nevertheless made available for circulation by some individual or organization, this person or institution is termed the release authority" -->
+				<date when="2021-06">Giugno 2021</date>
+				<availability status="restricted">
+					<p>Available for academic research purposes only.</p> <!-- aggiungere qualcosa? specificare meglio? -->
+					<!-- <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence> -->
+				</availability>
+			</publicationStmt>
+
+			<seriesStmt>  <!-- OPZIONALE (tenere?) -->
+				<title>Morphologie</title>
+				<respStmt>
+					<resp>Edizione digitale realizzata per il Corso di Codifica dei Testi, A.A. 2020/2021, tenuto dal prof.</resp>
+					<name ref="#AMDG">Angelo Mario Del Grosso</name>
+				</respStmt>
+				<idno type="n">7.1</idno> <!-- fascicolo 7, primo paragrafo; va bene @type? -->
+			</seriesStmt>
+
+			<sourceDesc>
+				<listBibl> <!-- inserire @ref per ogni voce bibliografica? -->
+					<biblStruct xml:lang="it"> <!-- monografia di Fadda usata come riferimento bibliografico? MA NON è FONTE PRIMARIA ed è usato solo per la traduzione italiana e il commento -->
+						<monogr>
+							<author>Emanuele Fadda</author>
+							<title>Sentimento della lingua. Per un'antropologia linguistica saussuriana</title>
+							<title type="sub">Per un'antropologia linguistica saussuriana</title>
+							<imprint>
+							 <pubPlace>Alessandria</pubPlace>
+							 <publisher>Edizioni dell'Orso</publisher>
+							 <date when="2017">2017</date>
+							</imprint>
+						</monogr>
+						<citedRange unit="page" from="100" to="110">100-110</citedRange>
+					</biblStruct>
+
+					<biblStruct xml:lang="fr"> <!-- edizione di Godel 1969? MA NON è FONTE PRIMARIA ed è solo citato Cfr. https://www.idref.fr/028275845 -->
+						<monogr>
+							<author>Robert Godel</author>
+							<title>Les sources manuscrites du cours de linguistique générale de F. de Saussure</title>
+							<imprint>
+							 <pubPlace>Genève</pubPlace>
+							 <publisher>Librairie Droz</publisher>
+							 <date when="1969">1969</date>
+							</imprint>
+						</monogr>
+						<!-- <citedRange unit="page" from="??" to="??">??</citedRange> -->
+					</biblStruct>
+
+					<biblStruct xml:lang="fr"> <!-- edizione Engler 1967-74: E 3293.1-6? MA NON è FONTE PRIMARIA ed è solo citato. Cfr. https://www.idref.fr/028275845 -->
+						<monogr>
+							<author>Ferdinand de Saussure</author>
+							<title>Cours de linguistique générale</title>
+							<editor>Rudolf Engler</editor>
+							<imprint>
+							 <pubPlace>Wiesbaden</pubPlace>
+							 <publisher>Otto Harrassowitz</publisher>
+							 <date from="1967" to="1974">1967-1974</date>
+							</imprint>
+						</monogr>
+						<!-- <citedRange unit="page" from="??" to="??">??</citedRange> -->
+					</biblStruct>
+				</listBibl>
+				
+				<msDesc>
+					<msIdentifier>
+						<country>Switzerland</country>
+						<settlement>Genève</settlement>
+						<repository type="library" ref="https://archives.bge-geneve.ch/archives/archives/fonds/saussure_ferdinand_de/view:5892/n:89" n="CH-BGE">Bibliothèque de Genève</repository> <!-- lasciato @n perché era nell'esempio Bellini, ma ha senso? -->
+						<collection>Archives Ferdinand de Saussure</collection> <!-- RICONTROLLARE INSIEME DIFFERENZA INSTITUTION - REPOSITORY - COLLECTION -->
+						<idno type="inventory" ref="https://archives.bge-geneve.ch/ark:/17786/vta9cfd3fc17efc113d/dao/0/layout:linear#id:258454482?gallery=true&center=2016.000,-2697.000&zoom=3&rotation=0.000">Ms. fr. 3951/7</idno> <!-- segnatura del manoscritto di Morfologie. VOLEVO INSERIRE IL LINK ALLA PAGINA ONLINE MA CONTIENE CARATTERE SPECIALE & (credo darà problemi in fase di validazione) -->
+						<altIdentifier><idno type="ARK">ark:/17786/vta9cfd3fc17efc113d</idno></altIdentifier> <!-- non sono sicura di ARK, ma sul sito della BGE c'è -->
+					</msIdentifier>
+
+					<msContents>
+						<msItem> <!-- msItem è davvero necessario? in realtà c'è un solo item... -->
+							<summary>Il manoscritto contiene il testo di <title>Morfologie</title> di <author>Ferdinand de Saussure</author>. 
+							Testo preparatorio per almeno tre lezioni (la terza é indicata da Saussure ai paragrafi 5 e 6. 
+							Il testo contiene la redazione finale, ricopiata in bella, con correzioni, e ordinato in sequenza da Saussure 
+							(bella copia BGE Ms fr. 3951/7 pp. 1-24) e conserva anche la versione precedente (brutta copia Ms. fr. 3951/7 pp 25-33).
+							</summary> <!-- HO PROVVISORIAMENTE COPIATO DAL PDF, DA RIVEDERE -->
+							<author xml:lang="fr">Ferdinand de Saussure</author><!-- INSERIRE REF (ache riga 23)? es: <author ref="TEI-ListPerson.xml#VB">Vincenzo Bellini</author> -->
+							<title type="uniform" xml:lang="fr">Morfologie</title> <!-- lasciato type="uniform" perché titolo in forma standard -->
+							<textLang mainLang="fr" otherLangs="lat" otherLangs="grc" otherLangs="goh" otherLangs="de" otherLangs="it">
+								La lingua principale è il francese (fr) di fine Ottocento, con abbreviazioni e termini tecnici.
+								Dal momento che il testo tratta argomenti di linguistica, esso contiene esempi e termini in più lingue,
+								tra cui l'antico greco (grc), il latino (lat), l'antico alto tedesco (goh), l'italiano (it).
+								<!-- N.B. per CATERINA: sicuramente tu sei più pratica di me nel campo linguistico, quindi ti cedo la revisione completa di questa parte. 
+								Le linee guida della TEI rimandano a 3WC, per approfondire l'argomento del tag linguistico: https://www.w3.org/International/questions/qa-choosing-language-tags.en -->
+							</textLang> <!-- cancellare poi sigle lingue, dedotte da: http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+						</msItem>
+					</msContents>
+
+					<physDesc>
+						<objectDesc form="gathering">
+							<supportDesc>
+								<support>
+									<material>Carta di media pesantezza.</material>
+									<p>Fascicolo in buone condizioni. Carta di media pesantezza, senza filigrana, colore beige, 
+										con una leggera rigatura (orizzontale).
+										Sono presenti vari buchi; in alcuni fogli il margine inferiore o laterale è strappato.
+										L'inchiostro è nero, tendente al marrone scuro; alcuni tratti sono segnati con matita colorata rossa.
+										<!-- descrizione dell'intero fascicolo o solo dei fogli che interessano il primo paragrafo? -->
+									</p>
+								</support>
+
+								<extent>
+									<measure type="composition" unit="folio" quantity="19">19 ff.</measure>	
+									<dimensions unit="mm">
+										<height>ca. 210</height>
+										<width>ca. 273</width>
+									</dimensions>
+								</extent>
+
+								<collation>
+									<p>Fascicolo composto da 19 fogli che contengono testo sia sul recto sia sul verso (ad eccezione del primo, 
+										usato come copertina). Ogni bifoglio del fascicolo, ad eccezione di alcuni casi (i fogli numerati come
+										"15", "16" e "26/27"), è piegato a metà, a formare un bifoglio. Ciascun bifoglio è quindi formato 
+										da quattro pagine (carta 1 recro e verso, carta 2 recto e verso).
+										Il primo paragrafo è contenuto nel secondo bifoglio, nelle c. 1r, 1v (prima metà) e 2r (seconda metà);
+										nella c. 1v (seconda metà) inizia il secondo paragrafo, che continua nella c. 2r (prima metà);
+										nella c. 2v ci sono alcune righe del paragrafo 3.
+									</p>
+								</collation>
+
+								<foliation xml:id="original"> <!-- numerazione piccola con inchiostro -->
+									<p>La numerazione originale delle pagine è apposta nell'angolo superiore esterno della pagina, 
+										con lo stesso inchiostro del testo (a volte separata dal resto con tratto di penna o con circoletto,
+										coma accade, ad esempio, nel secondo bifoglio, cc. 1r e 1v).</p>		 
+								</foliation>
+								<foliation xml:id="pencil"> <!-- numerazione a matita -->
+									<p>La numerazione delle pagine apposta a matita è posizionata sempre nell'angolo superiore esterno 
+										della pagina, laddove non presente il numero a penna (ad esempio, nel secondo bifoglio, è presente
+										un "3" nella c. 2r).</p>		 
+								</foliation>
+								<foliation xml:id="red"> <!-- numerazione a matita rossa -->
+									<p>Alcune pagine presentano una numerazione a matita rossa, in posizione evidente accanto al testo;
+										la dimensione dei numeri è molto grande (ad esempio, nel secondo bifoglio, c. 2v, presente un "4").</p>		 
+								</foliation>
+
+								<condition>
+									<p>il bifoglio che contiene il primo paragrafo di <title>Morfologie</title> è facilmente leggibile.
+									Le condizioni del supporto sono generalmente buone, ma il foglio presenta un buco a circa metà pagina,
+									vicino al margine esterno, che si riflette specularmente in entrambe le metà del bifoglio. Il margine 
+									esterno è rovinato in un punto (a ca. 110 mm dall'angolo basso); anche in questo caso il difetto si 
+									ripropone simmetricamente sulla metà opposta del bifoglio. Nellla c. 1r, inoltre, si vede chiaramente
+									il segno lasciato da una clip, usata per tenere insieme di vari fogli del fascicolo.</p>
+								</condition>
+							</supportDesc>
+
+							<layoutDesc>
+								<p>Il fascicolo rappresenta una copia di lavoro, per cui i margini sono molto irregolari, e spesso occupati
+								da aggiunte e correzioni.</p>
+							</layoutDesc>
+						</objectDesc>
+
+						<handDesc hands="3">
+							<handNote><p>Scrittura a mano libera, corsiva ma ben leggibile, riconducibile a Saussure.</p></handNote>
+							<handNote xml:id="h1">	<!-- HO DISTINTO UNA MANO DIVERSA PER LA NUMERAZIONE A MATITA, MA è SOLO UN'IPOTESI -> andrebbe indicato il grado di probabilità -->
+								<p>I numeri di pagina a matita sono probabilmente dovuti ad un catalogatore.</p>
+							</handNote>
+							<handNote xml:id="h2">	<!-- HO DISTINTO UNA MANO DIVERSA PER LA MATITA ROSSA (anche se quasi sicuramente è lo stesso S. a tracciare quei segni) -->
+								<p>Alcuni tratti in matita rossa, utilizzati per evidenziare parti del testo o per redigere una delle numerazioni,
+									sono probabilmente da attribuire allo stesso Saussure (forse una revisione successiva alla stesura).</p>
+							</handNote>
+						</handDesc>
+
+						<bindingDesc>
+							<p>Il fascicolo non è rilegato. I bifogli erano forse tenuti insieme da una clip metallica, di cui si può scorgere ancora
+								il segno, dovuto alla  ruggine, sulla c. 1 r del secondo bifoglio.</p>
+						</bindingDesc>
+					</physDesc>
+
+					<hystory>
+						<origin>
+							<p>La data non indicata nel documento. Si suppone, dati i corsi di Saussure e il contenuto, che sia del periodo 1893-94, 
+								ma potrebbe anche essere del 1894-95.</p>
+						</origin>
+
+						<acquisition> 
+							<p>Il manoscritto fa parte dell'<name type="org">Archives Ferdinand de Saussure</name>
+							della <name type="org">Bibliothèque de Genève</name>.</p><!-- PARAGRAFO DA RIVEDERE: INSERITO TESTO TROVATO SUL SITO BGE-->
+							<p>La majeure partie des archives de Ferdinand de Saussure provient de la maison familiale, rue de la Tertasse,
+								et a été donnée à la Bibliothèque par Jacques et Raymond de Saussure, en plusieurs lots, avec d'autres archives 
+								de la famille. Plusieurs dons ainsi qu'un document acheté en 1988 ont été intégrés à ce premier ensemble.
+								Le détail de ces acquisitions figure au niveau des dossiers ou pièces concernés.
+								A la faveur de travaux entrepris en 1996 par Claude de Saussure, d'autres papiers ont été découverts dans
+								une armoire de l'Orangerie. Ces documents ont été remis en don à la Bibliothèque par Madame Bertrand de Saussure
+								et Claude de Saussure.
+								En 2008, Madame Christine de Saussure a remis en don à la Bibliothèque quelques papiers de Ferdinand de Saussure.</p>
+						</acquisition>
+					</hystory>
+
+					<additional>
+						<adminInfo>
+							<note>
+												<!-- Note aggiuntive non strutturabili con altri tag TEI -->
+							</note>
+						</adminInfo>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+
+		<profileDesc>
+			<abstract>
+				<!-- (TOGLIERE?) contains a summary or formal abstract prefixed to an existing source document by the encoder. -->
+			</abstract>
+			
+			<creation> <!-- (creation) contains information about the creation of a text.--> 
+				<date when="1893-95">Anni 1895-95</date> <!-- !!  aggiungere che l'informazione non è certa -->
+ 				<rs type="city">Genève</rs>
+			</creation>
+
+			<langUsage> <!-- N.B. per CATERINA: potresti rivedere tu questo tag? La spiegazione è in 2.4.2 delle Linee Guida: io ho provato
+			a fare una prima classificazione in base a ciò che ho letto sul PDF ma non sono affatto certa della correttezza delle definizioni
+			né dell'uso delle sigle. Inoltre, da quanto ho capito sarebbe più completo se aggiugessimo l'attributo @usage accanto a @ident 
+			con cui si esprime la percentuale di uso di quella lingua nel testo (nel nostro caso sarà praticamente 98% francese e percntuali minuscole
+			delle altre lingue, credo...) -->
+				<language ident="fr">Francese di fine Ottocento</language> 
+				<language ident="lat">Latino</language>
+				<language ident="grc">Greco antico</language>
+				<language ident="it">Italiano</language>
+				<language ident="de">Tedesco</language>
+				<language ident="goh">Antico alto Tedesco</language>
+			</langUsage>
+
+			<textClass>
+				<keywords scheme="https://thes.bncf.firenze.sbn.it/termine.php?id=41984"> <!-- DA VERIFICARE INSIEME, NON è MOLTO CHIARO -->		
+					<term>Morfologia</term> <!-- indicare RESP -->
+					<!-- ALTRE PAROLE CHIAVE -->
+				</keywords>
+
+				<classCode scheme="DDC (WebDewey)">415.9</classCode> <!-- URL per DDC?-->
+			</textClass>
+			
+		</profileDesc>
+
+		<revisionDesc> <!-- "optional but highly recommended" -->
+			<change n="0" when="2021-06-10" who="#CF">
+				Trascrizione testo francese. Prima versione body.
+			</change>
+			<change n="1" when="2021-06-27" who="#LM">
+				Inserimento metadati. Prima versione teiHeader.
+			</change>
+		</revisionDesc>
+    </teiHeader>
+
+    <text>
+    	<front>
+		<!-- forse si potrebbe inserire qualcosa sulla pagina in cui c'è il titolo? -->
+		</front>
+
+  		<body>
+
+		<lb/>1. La morphologie, dit-on, est l'étude des formes du langage, tandis
+	    <lb/>que la phonétique serait l'étude des sons du langage.
+	    <lb/>On ne peut se contenter d'une pareille définition, non seulement
+	    <lb/>en théorie, mais même pour la pratique, car il arrivera
+	    <lb/>souvent que nous ne saurons plus si nous faisons de la morphologie
+	    <lb/>ou de la phonétique, comme on va le voir :
+ 	   <lb/>Il est évident d'abord que la phonétique, tout en s'occupant des
+ 	   <lb/>sons, et pour pouvoir le faire, est obligée en premier lieu
+ 	   <lb/>de s'occuper des formes. Les sons ne se transmettent pas
+ 	   <lb/>d'une génération à l'autre à l'état isolé ; les sons n'existent,
+ 	   <lb/>ne vivent et ne se modifient qu'au sein des mots. On n'a
+ 	   <lb/>pas prononcé s tout seul, et ensuite esprit rude.
+ 	   <lb/>On a prononcé serpō, sedos, et ensuite herpō, hedos.
+ 	   <lb/>Et si je dis : herpō sort de serpō, je fais de la phonétique
+ 	   <lb/>et rien d'autre. De même, si je dis que la première personne des verbes
+ 	   <lb/>en –ω ne peut pas venir d'une ancienne première personne en -ōmi.
+ 	   <lb/>D'autre part, la morphologie, qui est censée ne s'oc<!--ATTENZIONE il trattino a capo-->
+ 	   <lb/>-cuper que des formes, s'occupe parfaitement des sons. Par
+ 	   <lb/>exemple quand je dis que l'o grec peut alterner avec ε, et
+ 	   <lb/>pas avec α : λόγος [greco], λέγω [greco]– mais ἄγω [greco], pas d' ὄγ-,
+ 	   <!--SCRITTO NEL MARGINE-->je fais de la morphologie.<!--scritto nel margine-->>
+ 	   <lb/>Il est vrai que pour certaines personnes, cela s'appelle
+ 	   <lb/>faire de la phonétique. À cause de la mauvaise définition.
+ 	   <lb/>Mais il deviendra très clair, par la suite, que rien
+ 	   <lb/>n'est plus faux et plus dangereux que de classer un
+ 	   <lb/>fait de ce genre avec les faits phonétiques.
+ 	   <lb/>Ainsi il n'est pas aussi simple qu'on se l'imagine
+ 	   <lb/> <!--qf puntato-->>quelquefois de séparer les deux domaines, et ce n'est pas
+ 	   <lb/>en disant que l'une = étude des sons et l'autre, des formes,
+ 	   <lb/>qu'on obtient une ligne de démarcation satisfaisante.
+ 	   <lb/>Mais cette ligne de démarcation est impérieusement
+ 	   <lb/>nécessaire pour éviter de lamentables confusions.
+ 	   <lb/>Principe de direction : <!-- da Principe a Morphologie c'è una linea rossa a margine-->
+ 	   <lb/>Toutes les fois qu'on considère une même forme à
+ 	   <lb/>des dates diverses, c'est faire de la phonétique, -et toutes
+ 	   <lb/>les fois qu'on considère des formes diverses à une même
+ 	   <lb/>date, on fait de la morphologie. <!--fine prima pagina: Ms. fr. 3951/7 p. 1 -->>
+ 	   <!--inizio p. 2-->
+ 	   <!--QUI INIZIA LO SCHEMINO-->
+ 	   <lb/>vieux-haut-allemand zug zugi <!--[antico alto-tedesco]-->
+ 	   <lb/>nouvel allemand zug züge. <!--[tedesco]-->
+ 	   <!--QUI FINISCE LO SCHEMINO-->
+ 	   <lb/> <!--è scritto in parte abbreviato:CPARER-->>Comparer <!--SOTTOLINEATO-->>zugi<!--SOTTOLINEATO-->> <!--[antico alto-tedesco]--> <!--ABBREVIATO-->et<!--ABBREV.--> <!--SOTT-->züge<!--SOTT.--> [tedesco], c'est comparer <!--SCRITTO A NUMERO 2-->deux formes,
+       <lb/>et néanmoins ce n'est pas faire de la morphologie, mais de
+	    <lb/>la phonétique.<!--NON CAPISCO IL MANOSTRITTO, scritto strano phonetique, vedi sotto-->
+	    <lb/>Comparer <!--sottolin. le u-->u-ü <!--abbreviato-->>dans <!--sottolin-->>zug <!--[tedesco]-->, züge <!--[tedesco]-->, c'est <!--di nuovo CPARER-->comparer
+	    <lb/> <!--2-->>deux sons, et néanmoins ce n'est pas de la phonétique.<!--scritto di nuovo come sopra-->
+	    <!--VEDI SCHEMINO MS-->>Sphère ekwos ekwom <!--[ricostruzione]-->
+	    phonétique ἵππος ἵππον <!--[greco]-->
+	    Sphère morphologique
+	    <!--FINE SCHEMINO-->>
+	    <lb/>Les <!--2-->>deux sphères confondues dans les locutions courantes :
+	    <lb/><!--SOTTOLIN-->chantre <!--[francese]--> se rattache étymologiquement à <!--SOTTOLIN-->chanter <!--[francese]-->
+	    <lb/> <!--qui è tutto virgolettato fino a "à" escluso-->chantre [francese] se rattache étymologiquement à <!--sott.-->cantor <!--[latino]-->
+	    <lb/>φόρος <!--[greco]--> vient de φέρω <!--[greco]-->
+	    <lb/> <!--qui è di nuovo tutto virgolettato ad eccezione dellìultima parola-->φόρος [greco] vient de <!--sottolin-->bhoros <!--[ricostruzione]-->
+	    <!--IN QUESTO PUNTO FINISCE LA PRIMA SEZIONE E C'è L'ASTERISCO
+	    Ms. fr. 3951/7 p. 2 1a zona
+	    -->
+
+    	<!--QUI COMINCIA IL CONTINUO E SIAMO NELLA 2A ZONA DI PAGINA 3-->
+    	<lb/> <!--abbrev. Obs-->Observation L’<!--sottolin-->Étymologie, qu'on <!--linea sopra abbreviaz?-->donne <!--pf-->parfois <!--linea sopra-->>comme <!--1-->>une
+    	<lb/>branche de la science du langage,<!--tutta questa parte ha una linea sottile di cancellatura-->> ne <!--buco nel foglio--> représente
+    	<lb/>pas <!--1-->>un ordre déterminé de <!--cancellato: "faire"-->recherches
+    	<lb/>et encore moins <!--1-->>un ordre déterminé<!--puntato det.--> de faits.
+    	<lb/>Faire de l'étymologie<!--puntato etym.-->>, c'est faire <!--1-->une certaine <!--abbrev. cert.-->ap<!--ATTENZIONE-->
+    	<lb/>=plication de nos connaissances phonétiques<!--PUNTATO q.--> et
+    	<lb/>morphologiques.<!--puntato g.-->>
+    	<!--fuori margine--><lb/>Ramener par la 
+    	<lb/><!--scritto sempre strano-->phonétique jusqu'à l'époque<!--puntato q.-->
+    	<lb/>où le mot devient <!--NON CAPISCO QUALE PARTE VA DACCAPO-->morphologiquement analysable.<!--fine parte nel margine-->
+    	<!--inizio schema che è GIUSTIFICATO-->Coucher <!--[francese]-->
+    	coulchier
+    	collocare [italiano] colligo, locare [latino] <!--fine schema-->>
+    	<lb/>Quelquefois <!--qf-->>l'étymologie <!--puntato l.-->ne se meut même
+    	<lb/>que dans les modifications de l'idée : <!--qui c'è un punto, non i due punti-->
+    	<lb/>le barreau, <!--non c'è la virgola e queste due parole sono centrate e sottolineate entrambe-->
+    	<lb/>αὔτως [greco]. 
+    	</body>
+    	<!--APPUNTI SPARSI:
+    	STILISTICAMENTE A UNA PRIMA OCCHIATA NOTO L'USO DEI DUE PUNTI, DEL SOTTOLINEATO, DEI NUMERI IN CIFRE E DELLE ABBREVIAZIONI
+    	-->
+    	<back></back>
+
+    </text>
+
+</TEI>
