@@ -19,7 +19,7 @@
                 </title>
                 
                 <!-- collegamento foglio di stile CSS -->
-                <link rel="stylesheet" type="text/css" href="./20210901.css" /> <!-- collegare foglio CSS con nome giusto -->
+                <link rel="stylesheet" type="text/css" href="./20210902.css" /> <!-- collegare foglio CSS con nome giusto -->
                 
                 <!-- collegamento javascript -->
                 <script type="text/javascript" src="./progetto.js" /> <!-- collegare file .js con nome giusto -->
