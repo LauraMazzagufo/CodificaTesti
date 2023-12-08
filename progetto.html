@@ -1,0 +1,644 @@
+<!DOCTYPE HTML><html xmlns="https://www.w3.org/1999/xhtml" xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Morphologie: paragrafo 1. Edizione digitale.</title><script src="https://code.jquery.com/jquery-3.6.4.min.js"></script><script type="text/javascript">
+                    
+                    $(document).ready(function() {
+                        // Seleziona tutti i paragrafi con id che inizia con 'p' e termina con '-fr' o '-it'
+                        $("p[id^='p']").hover(
+                            function() {
+                                // Quando il mouse entra nel paragrafo
+                    
+                                // Recupera l'ID del paragrafo
+                                var id = $(this).attr('id');
+                    
+                                // Estrai il numero dall'ID del paragrafo utilizzando una regex
+                                var num = id.match(/\d+/)[0];
+                    
+                                // Costruisci l'ID del paragrafo in italiano e in francese concatenando il numero estratto
+                                var id_it = "p" + num + "-it";
+                                var id_fr = "p" + num + "-fr";
+                    
+                                // Trova i corrispondenti paragrafi in italiano e francese e aggiungi la classe "highlight"
+                                $("p[id='" + id_it + "'], p[id='" + id_fr + "']").addClass("highlight");
+                            },
+                            function() {
+                                // Quando il mouse esce dal paragrafo
+                    
+                                // Rimuovi la classe "highlight" da tutti i paragrafi in italiano e francese
+                                $("p[id^='p']").removeClass("highlight");
+                            }
+                        );
+                    });
+                    
+                      
+                </script><link rel="stylesheet" type="text/css" href="./progetto.css"></link>
+   </head>
+   <body>
+      <header>
+         <div id="intestazione" class="split"><a target="_blank" alt="Logo UNiversità di Pisa" href="https://www.unipi.it/"><img class="logo-left" src="./immagini/logo-unipi.svg"></img></a><a target="_blank" alt="Logo Informatica Umanistica" href="https://infouma.fileli.unipi.it/"><img class="logo-right" src="./immagini/logo-infouma.svg"></img></a></div>
+         <h2>Ferdinand de Saussure</h2>
+         <h1>Morphologie: paragrafo 1. Edizione digitale.</h1>
+         <nav id="menu"><span class="scelta-menu"><a href="#saussure"><img class="img-menu" src="./immagini/saussure.jpg"></img><div class="etichetta">
+                     <p class="textp">F. de Saussure</p>
+                  </div></a></span><span class="scelta-menu"><a href="#info-codifica"><img class="img-menu" src="./immagini/codifica.jpg" style="width:100%"></img><div class="etichetta">
+                     <p class="textp">La codifica</p>
+                  </div></a></span><span class="scelta-menu"><a href="#info-metadati"><img class="img-menu" src="./immagini/metadati.jpg"></img><div class="etichetta">
+                     <p class="textp">Metadati</p>
+                  </div></a></span><span class="scelta-menu"><a href="#traduzione"><img class="img-menu" src="./immagini/traduzione.jpg"></img><div class="etichetta">
+                     <p class="textp">Traduzione</p>
+                  </div></a></span><span class="scelta-menu"><a href="#fonte-primaria"><img class="img-menu" src="./immagini/fonte-primaria.jpg"></img><div class="etichetta">
+                     <p class="textp">La fonte primaria</p>
+                  </div></a></span><span class="scelta-menu"><a href="#bibliografia"><img class="img-menu" src="./immagini/bibliografia.jpg"></img><div class="etichetta">
+                     <p class="textp">Bibliografia</p>
+                  </div></a></span></nav>
+      </header>
+      <div id="saussure" class="box">
+         <h2>Ferdinand de Saussure</h2>
+         <p> </p>
+         <p>
+            									Ferdinand de Saussure, padre della linguistica generale, è nato a Ginevra
+            nel 1857.
+            									Cresciuto in un ambiente di fine cultura, indirizzò fin da giovane la sua
+            precoce intelligenza verso 
+            									l'ambito linguistico. Già prima del compimento degli studi universitari a
+            Lipsia, si rese
+            									noto agli specialisti grazie alla pubblicazione dell'innovativa ricostruzione
+            del sistema fonematico dell'indoeuropeo.
+            								</p>
+         <p>
+            									La sua abitudine a riversare pensieri in appunti molto fitti, criptici, ermetici,
+            rivela importanti spunti sul
+            									metodo attraverso il quale fissava il proprio flusso di pensieri. La sua
+            scrittura è quindi molto intima: la pagina
+            									manoscritta si configura come una vera e propria officina del pensiero, in
+            cui i concetti si chiariscono mano a mano
+            									che procede nella scrittura.
+            								</p>
+         <p>
+            									Ulteriori informazioni su Saussure sono disponibili sulla 
+            									<a href="https://it.wikipedia.org/wiki/Ferdinand_de_Saussure" target="&#xA;                &#34;_blank&#34;&#xA;            ">relativa pagina</a> di Wikipedia e sulla
+            									<a href="https://hls-dhs-dss.ch/it/articles/016165/2013-01-31/" target="&#xA;                &#34;_blank&#34;&#xA;            ">voce omonima</a> del Dizionario Storico della Svizzera.
+            								</p><img class="img-box" alt="Disegno di Ferdinand de Saussure, creato da Edward Drantler." src="./immagini/saussure-by-drantler.jpg"></img><p class="small">Disegno di Ferdinand de Saussure, creato da Edward Drantler 
+            [<a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC licensing</a>].</p>
+      </div>
+      <div id="torna-menu"><a href="#menu">Torna al menu</a></div>
+      <div id="info-codifica" class="box">
+         <h2>Informazioni sulla codifica</h2>
+         <h3>Responsabilità del testo: </h3>
+         <p>Trascrizione a cura di Robert Godel.<br></br>Traduzione a cura di Emanuele Fadda.<br></br></p>
+         <h3>Edizione del testo digitale: </h3>
+         <p>Edizione digitale conforme alle linee guida TEI (P5). 
+            					Giugno 2021 - Settembre 2023
+            				<br></br><i>Codifica a cura di: </i><ul>
+               <li>Laura Mazzagufo</li>
+            </ul>
+            <p><i>Edizione digitale coordinata da: </i></p>
+            <ul>
+               <li>Angelo Mario Del Grosso</li>
+               <li>Silvia Piccini</li>
+            </ul><br></br></p>
+         <h3>Altre informazioni: </h3>
+         <p>Edizione digitale realizzata per il Corso di Codifica dei Testi, A.A. 2020/2021, tenuto
+            dal prof. Angelo Mario Del Grosso.<br></br></p>
+         <p>Università di Pisa<br></br><i>Available for academic research purposes only</i>. <a href="https://creativecommons.org/licenses/by/4.0/" target="&#xA;                &#34;_blank&#34;&#xA;            ">CC-BY 4.0</a><br></br></p>
+      </div>
+      <div id="torna-menu"><a href="#menu">Torna al menu</a></div>
+      <div id="info-metadati" class="box">
+         <h2>Morphologie, paragrafo 1: metadati</h2>
+         <h3>Il testo: </h3>
+         <p><i>Autore: </i>Ferdinand de Saussure<br></br><i>Titolo: </i>Morphologie</p>
+         <p><i>Sezione: </i>Primo paragrafo (pericopi 011, 012, 013). Il testo si sviluppa su circa 3 pagine della fonte primaria.<br></br><br></br></p>
+         <h3>Il manoscritto: </h3>
+         <p><i>Collocazione: </i><a href="https://archives.bge-geneve.ch/archives/archives/fonds/saussure_ferdinand_de/view:5892/n:89" target="&#xA;                &#34;_blank&#34;&#xA;            ">Bibliothèque de Genève</a> (Genève, Switzerland)<br></br><i>Inventario: </i>Archives Ferdinand de Saussure, <a href="" target="&#xA;                &#34;_blank&#34;&#xA;            ">Ms. fr. 3951/7</a><br></br><i>Archival Resource Key: </i>ark:/17786/vta9cfd3fc17efc113d<br></br><br></br></p>
+         <h3>Storia e datazione: </h3>
+         <p><i>Acquisizione: </i>Il manoscritto fa parte dell'Archives Ferdinand de Saussure
+            							della Bibliothèque de Genève. <br></br><i>Datazione: </i>La data non è indicata nel documento. Si suppone, dati i corsi di Saussure e il contenuto,
+            che sia appartenente al 
+            								periodo 1893-94, ma potrebbe essere stato redatto in un momento successivo,
+            								ad esempio nel biennio 1894-95.<br></br></p>
+         <h3>Altre informazioni: </h3>
+         <p><i>Contenuto: </i>Il manoscritto contiene il testo di Morphologie di Ferdinand de Saussure.
+            							Testo preparatorio per almeno tre lezioni (la terza é indicata da Saussure
+            ai paragrafi 5 e 6). 
+            							Il testo contiene la redazione finale, ricopiata in bella, con correzioni,
+            e ordinato in sequenza da Saussure 
+            							(bella copia BGE Ms fr. 3951/7 pp. 1-24) e conserva anche la versione precedente
+            (brutta copia Ms. fr. 3951/7 pp 25-33).<br></br><i>Lingua: </i>
+            								La lingua principale è il francese (fr) di fine Ottocento, con abbreviazioni
+            e termini tecnici.
+            								Dal momento che il testo tratta argomenti di linguistica, esso contiene esempi
+            e termini in più lingue,
+            								tra cui l'antico greco (grc), il latino (lat), l'antico alto tedesco (goh),
+            l'italiano (it).
+            						</p>
+         <p><i>Descrizione fisica: </i>Foliazione: 19 ff. Dimensione: altezza ca. 210 mm, larghezza ca. 273 mm.<br></br><i>Supporto: </i>Carta di media pesantezza. Fascicolo in buone condizioni. Carta di colore beige, senza filigrana, con una leggera
+            rigatura 
+            										(orizzontale). Sono presenti vari buchi; in alcuni fogli il margine inferiore
+            
+            										o laterale è strappato. L'inchiostro è nero, tendente al marrone scuro;
+            alcuni tratti sono segnati con 
+            										matita colorata rossa.
+            									<br></br><i>Descrizione del fascicolo: </i>Fascicolo composto da 19 fogli che contengono testo sia sul recto sia sul verso (ad
+            eccezione del primo, 
+            										usato come copertina). Ogni bifoglio del fascicolo, ad eccezione di alcuni
+            casi (i fogli numerati come
+            										"15", "16" e "26/27"), è piegato a metà, a formare un bifoglio. Ciascun
+            bifoglio è quindi formato 
+            										da quattro pagine (carta 1 recro e verso, carta 2 recto e verso).
+            										Il primo paragrafo è contenuto nel secondo bifoglio, nelle c. 1r, 1v (prima
+            metà) e 2r (seconda metà);
+            										nella c. 1v (seconda metà) inizia il secondo paragrafo, che continua nella
+            c. 2r (prima metà);
+            										nella c. 2v ci sono alcune righe del paragrafo 3.
+            									</p>
+      </div>
+      <div id="torna-menu"><a href="#menu">Torna al menu</a></div>
+      <div id="traduzione" class="box-grande">
+         <h2>Morfologia, paragrafo 1: traduzione italiana</h2>
+         <p class="small">Nel testo sono evidenziati in verde gli esempi linguistici in lingua diversa da quella
+            del testo (francese), in giallo i termini tecnici di dominio linguistico. Sono inoltre
+            riportate le sottolineature presenti nella fonte primaria e sono state formattate
+            in corsivo le forme ricostruite.</p>
+         <div class="box-contenitore"><span class="affiancato">
+               <h3>Il testo francese: </h3>
+               <p><u>Pericope 011: </u></p>
+               <p id="p1-fr"> 
+                  								1. La <span class="highlight2">morphol.</span>, dit-on, est l'étude des formes du <span class="highlight2">langage</span>, tandis
+                  	    						que la <span class="highlight2">phon.</span> serait l'étude des sons du <span class="highlight2">lang.</span>.
+                  							</p>
+               <p id="p2-fr">
+                  	    						On ne peut se contenter d'une pareille défin., non seult
+                  	    						en théorie, mais même pour la pratique, car il arrivera
+                  	    						souvent que ns ne saurons plus si ns faisons de la morp.
+                  	    						ou de la phon., come on va le voir :
+                  							</p>
+               <p id="p3-fr">
+                  		 	   					Il est évident d'abord que la <span class="highlight2">phon.</span>, tt en s'occupant des
+                  		 	   					<span class="highlight2">sons</span>, et pour pouvoir le faire, est obligée en premier lieu
+                  	   							de s'occuper des <span class="highlight2">formes</span>.Les <span class="highlight2">sons</span> ne se transmettent pas
+                  	   							d'une génération à l'autre à l'état isolé ; les <span class="highlight2">sons</span> n'existent,
+                  	   							ne vivent et ne se modifient qu'au sein des <span class="highlight2">mots</span>. On n'a
+                  		 	   					pas prononcé <u>s</u> tout seul, on a po et ensuite esprit rude.
+                  	   							On a prononcé <u><i>serpō</i></u>, <u><i>sedos</i></u>, et ensuite <u><i>herpō</i></u>, <u><i>hedos</i></u>.
+                  	   							Et si je dis : <u><i>herpō</i></u> sort de <u><i>serpō</i></u>, je <u>fais de la phonetq</u>
+                  	   							et rien d'autre. De même, si je dis que la 1e pers. des verbes
+                  		 	   					en <u>-ω</u> ne peut pas venir d'une ancienne 1e pes en <u>-ōmi</u>.
+                  							</p>
+               <p id="p4-fr">
+                  								D'autre part, la <span class="highlight2">morphol.</span>, qui est censée ne s'oc-
+                  				 	   			<br></br>-cuper que des <span class="highlight2">formes</span>, s'occupe parft des <span class="highlight2">sons</span>.Par
+                  	   							ex. qd je dis que l'o grec peut alterner avec ε, et
+                  	   							pas avec α : <span class="highlight">λόγος</span>, <span class="highlight">λέγω</span> - mais <span class="highlight">ἄγω</span>, pas d'ὄγ-,
+                  								je fais de la <span class="highlight2">morph</span>.Il est vrai que pour certns persons, cela s'appelle
+                  				 				faire de <u>la <span class="highlight2">φonét.</span></u>. À cause de la mauvaise <span class="highlight2">définition</span>.
+                  				 				Mais il deviendra très clair, par la suite, que rien
+                  	   							n'est + fautfaux et plus dangereux que de classer un
+                  	   							<span class="highlight2">fait</span> de ce genre avec les faits <span class="highlight2">phonétiques</span>.
+                  							</p>
+               <p id="p5-fr">
+                  		 	   					Ainsi il n'est pas aussi simple qu'on se l'imagine
+                  		 	   					qf. de séparer les 2 domaines, et ce n'est pas en
+                  	  				 			disant que l'une = ét. des <span class="highlight2">sons</span> et l'autre, des <span class="highlight2">formes</span>,
+                  	   							qu'on obtient une ligne de démarcation satisfaisante.
+                  							</p>
+               <p id="p6-fr">
+                  		 	   					Mais cette ligne de dém. est impérieusement
+                  					   			nécessaire pour éviter de lamentables confusions.
+                  							</p>
+               <p><u>Pericope 012: </u></p>
+               <p id="p7-fr">
+                  								<span class="highlight2">Principe</span> de direction : 
+                  							</p>
+               <p id="p8-fr">
+                  								Toutes les fois qu'on siconsidère une même <span class="highlight2">forme</span> à
+                  	   							des dates diverses, c'est faire de la <span class="highlight2">φonétiq.</span>, - et toutes
+                  		 	   					les fois qu'on considère des <span class="highlight2">formes</span> diverses à 1 même
+                  	   							date, on fait de la <span class="highlight2">morφologie</span>.
+                  							</p>
+               <p id="p9-fr">
+                  								
+                  								
+                  <table border="1">
+                     <tr>
+                        <td><br></br>v. h'all. </td>
+                        <td><span class="highlight"> zug </span></td>
+                        <td><span class="highlight"> zugi </span></td>
+                     </tr>
+                     <tr>
+                        <td><br></br>nouv. all.</td>
+                        <td><span class="highlight"> zug </span></td>
+                        <td><span class="highlight"> züge </span>.</td>
+                     </tr>
+                  </table>
+                  	   							
+                  							</p>
+               <p id="p10-fr">
+                  		 	   					Cparer <u><span class="highlight">zugi</span></u> &amp; <u><span class="highlight">züge</span></u>, c'est cparer 2 <span class="highlight2">formes</span>, et
+                  		   					néanmoins ce n'est pas faire de la <span class="highlight2">morp.</span>, mais de
+                  			    				la <span class="highlight2">φon</span>.
+                  	    					</p>
+               <p id="p11-fr">
+                  								Comparer <u>u</u>-<u>ü</u> ds <u><span class="highlight">zug</span></u>, <u><span class="highlight">züge</span></u>, c'est cparer
+                  	    						2 <span class="highlight2">sons</span>, et néanmoins ce n'est pas de la <span class="highlight2">φon</span>.
+                  							</p>
+               <p id="p12-fr">
+                  								
+                  								
+                  <table border="1">
+                     <tr>
+                        <td>Sphère </td>
+                        <td><span class="highlight"> ekwos ekwom </span><br></br><span class="highlight"> ἵππος ἵππον </span></td>
+                     </tr>
+                     <tr>
+                        <td><span class="highlight2">phonétique</span></td>
+                        <td> Sphère <span class="highlight2">morphologique</span></td>
+                     </tr>
+                  </table>
+                  	   							
+                  							</p>
+               <p id="p13-fr">
+                  								Les 2 sphères confondues ds les locutions courantes :
+                  			    				<u>chantre</u> se rattache étymol. à <u>chanter</u>
+                  			    				 
+                  								" " "
+                  									chantre se rattache étymologiquement
+                  								 à <u><span class="highlight">cantor</span></u>
+                  	   							<span class="highlight">φόρος</span> vient de <span class="highlight">φέρω</span>
+                  	    						
+                  								" " "
+                  									<span class="highlight">φόρος</span> vient de 
+                  								 <u><i>bhoros</i></u>
+                  	    					</p>
+               <p><u>Pericope 013: </u></p>
+               <p id="p14-fr">
+                  							Obs. L'<u><span class="highlight2">Étymologie</span></u>, qu'on don pf. come 1
+                  		    					branche de la sc. du <span class="highlight2">langage</span>, ne représente
+                  							pas 1 ordre déterminé de fairerecherches
+                  							et encore moins 1 ordre dét.de <span class="highlight2">faits</span>.
+                  							</p>
+               <p id="p15-fr">
+                  		    					Faire de l'<span class="highlight2">étym.</span>, c'est faire 1 cert. ap
+                  							<br></br>=plication de nos <span class="highlight2">conaissances</span> <span class="highlight2">phoneth.</span> et
+                  		    					<span class="highlight2">morφol.</span>.
+                  							</p>
+               <p id="p16-fr">
+                  								
+                  									<br></br>Ramener par la 
+                  									<br></br><span class="highlight2">φon.</span> jusqu'à l'<span class="highlight2">époq.</span>
+                  									<br></br>où le <span class="highlight2">mot</span> devient
+                  									<br></br><span class="highlight2">morφol.</span> analysable.
+                  								
+                  							</p>
+               <p id="p17-fr">
+                  							
+                  								
+                  <table border="1">
+                     <tr>
+                        <td>Coucher <br></br> coulchier </td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td> <span class="highlight"> collocare</span> </td>
+                        <td> <span class="highlight"> colligo</span> <span class="highlight">locare</span></td>
+                     </tr>
+                  </table>
+                  								
+                  							</p>
+               <p id="p18-fr">
+                  		   					Qf. l'<span class="highlight2">étymol.</span> ne se meut même
+                  							que ds les modificat. de l'<span class="highlight2">idée</span>.
+                  		    					<u>Le barreau</u>,
+                  							<u><span class="highlight">αὔτως</span></u>. 
+                  							</p></span><span class="affiancato">
+               <h3>La traduzione italiana: </h3><u>Pericope 011: </u><p id="p1-it">
+                  								La morfologia, si dice, è lo studio delle forme del linguaggio,
+                  								mentre la fonetica sarebbe lo studio dei suoni del linguaggio.
+                  							</p>
+               <p id="p2-it">
+                  	    						Non ci si può accontentare di una tale definizione, non soltanto in teoria,
+                  								ma nemmeno per la pratica, giacché accadrà sovente che noi non sapremo più
+                  								se stiamo facendo morfologia o fonetica, come vedremo.
+                  							</p>
+               <p id="p3-it">
+                  								È anzitutto evidente che la fonetica, pur occupandosi dei suoni, e per poterlo
+                  fare,
+                  								è obbligata in primo luogo ad occuparsi delle forme. I suoni 
+                  								non si trasmettono da una generazione all'altra allo stato isolato; 
+                  								i suoni non esistono, non vivono e non si modificano se non nelle parole.
+                  								Non si è mai pronunciato [prima] s, e poi uno spirito aspro.
+                  								Si è pronunciato serpō, sedos, e poi herpō, hedos. E se io dico:
+                  								herpō viene da serpō, io faccio della fonetica, e null'altro. Ugualmente,
+                  se dico
+                  								che la prima persona dei verbi in -ω non può venire da una antica prima persona
+                  in -ōmi.
+                  							</p>
+               <p id="p4-it">
+                  								D'altra parte, la morfologia, che si ritiene non si occupi che delle forme,
+                  								s'occupa invece talvolta dei suoni. Per esempio, quando dico che la ο greca
+                  								può alternare con ε, e non con α: λόγος, λέγω - ma ἄγω e non ὀγ-, faccio morfologia.
+                  								È vero che per certe persone questo si chiama fare fonetica.
+                  								A causa della cattiva definizione. Ma diventerà molto chiaro,
+                  								ne seguito, che niente è più falso e più pericoloso che classificare un fatto
+                  del genere
+                  								con i fatti fonetici.
+                  							</p>
+               <p id="p5-it">
+                  								E dunque, non è così facile come si immagina talvolta il separare i due dominî,
+                  								e non è dicendo che uno = studio dei suoni e l'altro delle forme che si ottiene
+                  								una linea di demarcazione soddisfacente.
+                  							</p>
+               <p id="p6-it">
+                  								Ma questa linea di demarcazione è imperiosamente necessaria per evitare deplorevoli
+                  confusioni.
+                  							</p>
+               <p><u>Pericope 012: </u></p>
+               <p id="p7-it">
+                  								Principio di direzione:
+                  							</p>
+               <p id="p8-it">
+                  								Ogni volta che si considera una stessa forma a date diverse, ciò è fare fonetica,
+                  								e ogni volta che consideriamo forme diverse a una stessa data, si fa morfologia.
+                  							</p>
+               <p id="p9-it">
+                  								
+                  								 antico alto-tedesco  zug  zugi  tedesco  zug  züge.
+                  								
+                  							</p>
+               <p id="p10-it">
+                  								Comparare zugi e züge è comparare due forme, e nondimeno ciò non è fare morfologia,
+                  ma fonetica.
+                  							</p>
+               <p id="p11-it">
+                  								Comparare u-ü in zug, züge è comparare due suoni, e nondimeno questo non è
+                  fonetica.
+                  							</p>
+               <p id="p12-it">
+                  								
+                  								Sfera [ekwos ekwom]  [ἵππος ἵππον]  fonetica  Sfera morfologica
+                  	   							
+                  							</p>
+               <p id="p13-it">
+                  								Le due sfere [sono] confuse nelle locuzioni correnti:
+                  								chantre si ricollega etimologicamente a chanter
+                  								chantre si ricollega etimologicamente a cantor
+                  								φόρος viene da φέρω
+                  								φόρος viene da bhoros
+                  							</p>
+               <p><u>Pericope 013: </u></p>
+               <p id="p14-it">
+                  								Osservazione. L'Etimologia, che talvolta è data come branca della scienza
+                  del linguaggio,
+                  								non rappresenta un ordine determinato di ricerche, e ancor meno un ordine
+                  determinato di fatti.
+                  							</p>
+               <p id="p15-it">
+                  								Fare etimologia, è fare una certa applicazione delle nostre conoscenze fonetiche
+                  e morfologiche.
+                  							</p>
+               <p id="p16-it">
+                  								Risalire attraverso la fonetica a un'epoca in cui la parola diventa morfologicamente
+                  analizzabile:
+                  							</p>
+               <p id="p17-it">
+                  								
+                  								Coucher  coulchier  collocare  colligo locare
+                  								
+                  							</p>
+               <p id="p18-it">
+                  								Talvolta, l'etimologia non si muove che nell'ambito delle modificazioni dell'idea:
+                  le barreau, αὔτως.
+                  							</p></span></div>
+         <div id="glossario" class="box">
+            <h2>Glossario</h2>
+            <p>Piccolo glossario dei termini linguistici del testo.</p>
+            <ul>
+               <li><u>Morphologie</u>: Studio della forma delle parole, in particolare delle variazioni legate alla flessione.</li>
+               <li><u>Langage</u>: Sistema di segni, simboli, elaborato a partire dalle lingue naturali e costituente
+                  un codice che le sostituisce in alcuni casi determinati (si parla anche di linguaggio
+                  simbolico).</li>
+               <li><u>Phonetique</u>: Parte della linguistica che studia le caratteristiche dei suoni delle lingue.</li>
+               <li><u>Son</u>: Onda sonora prodotta dalla vibrazione delle corde vocali.</li>
+               <li><u>Forme</u>: Ciascuno degli aspetti particolari in cui può presentarsi una stessa parola.</li>
+               <li><u>Mot</u>: Suono, segno, lettera, o gruppo di suoni, segni, lettere, utilizzati per designare
+                  oggetti, esprimere azioni, sentimenti, idee, così come i loro rapporti.</li>
+               <li><u>Définition</u>: La definizione di una parola, di un termine, l'indicazione del senso che l'uso le
+                  attribuisce.</li>
+               <li><u>Fait</u>: Atto, azione considerati sotto il loro aspetto generale.</li>
+               <li><u>Principe</u>: Ciascuno dei fondamenti della conoscenza, ciascuna delle leggi che dirigono l'esercizio
+                  del pensiero razionale.</li>
+               <li><u>Étymologie</u>: Scienza avente per oggetto lo studio dell'origine delle parole, la conoscenza delle
+                  loro forme antiche e la scoperta delle leggi e degli incidenti che hanno condizionato
+                  la loro evoluzione.</li>
+               <li><u>Connaissance</u>: Ciò che è noto attraverso lo studio, l'esperienza o qualsiasi altro mezzo di informazione.</li>
+               <li><u>Époque</u>: Periodo storico considerato in relazione agli eventi che si svolgono in esso, caratteri
+                  propri.</li>
+               <li><u>Idée</u>: Ogni rappresentazione di un essere, di una cosa, di un fatto, di un atto, ecc., che
+                  si forma la mente.</li>
+            </ul>
+         </div>
+      </div>
+      <div id="torna-menu"><a href="#menu">Torna al menu</a></div>
+      <div id="fonte-primaria" class="box-grande">
+         <h2>La fonte primaria</h2>
+         <div class="box-contenitore"><span class="affiancato">
+               <h3>Informazioni</h3><br></br><p><i>Tipo di materiale autografo: </i><p>Il fascicolo rappresenta una copia di lavoro, per cui i margini sono molto irregolari,
+                     e spesso occupati
+                     								da aggiunte e correzioni.</p>
+               </p><br></br><p><i>Condizioni del fascicolo: </i><p>Il bifoglio che contiene il primo paragrafo di Morphologie è facilmente leggibile.
+                     									Le condizioni del supporto sono generalmente buone, ma il foglio presenta
+                     un buco a circa metà pagina,
+                     									vicino al margine esterno, che si riflette specularmente in entrambe le metà
+                     del bifoglio. Il margine 
+                     									esterno è rovinato in un punto (a ca. 110 mm dall'angolo basso); anche in
+                     questo caso il difetto si 
+                     									ripropone simmetricamente sulla metà opposta del bifoglio. Nellla c. 1r,
+                     inoltre, si vede chiaramente
+                     									il segno lasciato da una clip, usata per tenere insieme di vari fogli del
+                     fascicolo.</p><br></br><p><i>Numerazione delle pagine: </i></p>
+                  <p>La numerazione originale delle pagine è apposta nell'angolo superiore esterno della
+                     pagina, 
+                     										con lo stesso inchiostro del testo (a volte separata dal resto con tratto
+                     di penna o con circoletto,
+                     										coma accade, ad esempio, nel secondo bifoglio, cc. 1r e 1v).</p>
+                  <p>La numerazione delle pagine apposta a matita è posizionata sempre nell'angolo superiore
+                     esterno 
+                     										della pagina, laddove non presente il numero a penna (ad esempio, nel secondo
+                     bifoglio, è presente
+                     										un "3" nella c. 2r).</p>
+                  <p>Alcune pagine presentano una numerazione a matita rossa, in posizione evidente accanto
+                     al testo;
+                     										la dimensione dei numeri è molto grande (ad esempio, nel secondo bifoglio,
+                     c. 2v, presente un "4").</p>
+               </p><br></br><p><i>Mani: </i><p>h0: Scrittura a mano libera, corsiva ma ben leggibile, riconducibile a Saussure.</p>
+                  <p>h1: I numeri di pagina a matita sono probabilmente dovuti ad un catalogatore.</p>
+                  <p>h2: Alcuni tratti in matita rossa, utilizzati per evidenziare parti del testo o per redigere
+                     una delle numerazioni,
+                     									sono probabilmente da attribuire allo stesso Saussure (forse una revisione
+                     successiva alla stesura).</p>
+               </p></span><span class="affiancato">
+               <h3>Il manoscritto</h3><img class="&#xA;                img-facs&#xA;            " src="./immagini/ms_fr_03951_07_p001.jpg" alt="&#xA;                Prima pagina della fonte primaria&#xA;            " style="&#xA;                width:100%; height:100%; object-fit: contain;&#xA;            "></img></span></div>
+         <h2>La fonte primaria</h2>
+         <div class="box-contenitore"><span class="affiancato">
+               <h3>Il manoscritto</h3><img class="&#xA;                img-facs&#xA;            " src="./immagini/ms_fr_03951_07_p001.jpg" alt="&#xA;                Prima pagina della fonte primaria&#xA;            " style="&#xA;                width:100%; height:100%; object-fit: contain;&#xA;            "></img></span><span class="affiancato">
+               <h3>Trascrizione diplomatica della prima pagina</h3><i>
+                  <p class="small">In questa sezione il testo è trascritto diplomaticamente, senza lo scioglimento delle
+                     abbreviazioni e con le ortografie e le interruzioni di riga originali.</p></i><p class="large"> 
+                  								<br></br>1. La <span class="highlight2">morphol.</span>, dit-on, est l'étude des formes du <span class="highlight2">langage</span>, tandis
+                  	    						<br></br>que la <span class="highlight2">phon.</span> serait l'étude des sons du <span class="highlight2">lang.</span>.
+                  							
+                  	    						<br></br>On ne peut se contenter d'une pareille défin., non seult
+                  	    						<br></br>en théorie, mais même pour la pratique, car il arrivera
+                  	    						<br></br>souvent que ns ne saurons plus si ns faisons de la morp.
+                  	    						<br></br>ou de la phon., come on va le voir :
+                  							
+                  		 	   					<br></br>Il est évident d'abord que la <span class="highlight2">phon.</span>, tt en s'occupant des
+                  		 	   					<br></br><span class="highlight2">sons</span>, et pour pouvoir le faire, est obligée en premier lieu
+                  	   							<br></br>de s'occuper des <span class="highlight2">formes</span>.Les <span class="highlight2">sons</span> ne se transmettent pas
+                  	   							<br></br>d'une génération à l'autre à l'état isolé ; les <span class="highlight2">sons</span> n'existent,
+                  	   							<br></br>ne vivent et ne se modifient qu'au sein des <span class="highlight2">mots</span>. On n'a
+                  		 	   					<br></br>pas prononcé <u>s</u> tout seul, on a po et ensuite esprit rude.
+                  	   							<br></br>On a prononcé <u><i>serpō</i></u>, <u><i>sedos</i></u>, et ensuite <u><i>herpō</i></u>, <u><i>hedos</i></u>.
+                  	   							<br></br>Et si je dis : <u><i>herpō</i></u> sort de <u><i>serpō</i></u>, je <u>fais de la phonetq</u>
+                  	   							<br></br>et rien d'autre. De même, si je dis que la 1e pers. des verbes
+                  		 	   					<br></br>en <u>-ω</u> ne peut pas venir d'une ancienne 1e pes en <u>-ōmi</u>.
+                  							
+                  								<br></br>D'autre part, la <span class="highlight2">morphol.</span>, qui est censée ne s'oc-
+                  				 	   			<br></br>-cuper que des <span class="highlight2">formes</span>, s'occupe parft des <span class="highlight2">sons</span>.Par
+                  	   							<br></br>ex. qd je dis que l'o grec peut alterner avec ε, et
+                  	   							<br></br>pas avec α : <span class="highlight">λόγος</span>, <span class="highlight">λέγω</span> - mais <span class="highlight">ἄγω</span>, pas d'ὄγ-,
+                  								<br></br>je fais de la <span class="highlight2">morph</span>.Il est vrai que pour certns persons, cela s'appelle
+                  				 				<br></br>faire de <u>la <span class="highlight2">φonét.</span></u>. À cause de la mauvaise <span class="highlight2">définition</span>.
+                  				 				<br></br>Mais il deviendra très clair, par la suite, que rien
+                  	   							<br></br>n'est + fautfaux et plus dangereux que de classer un
+                  	   							<br></br><span class="highlight2">fait</span> de ce genre avec les faits <span class="highlight2">phonétiques</span>.
+                  							
+                  		 	   					<br></br>Ainsi il n'est pas aussi simple qu'on se l'imagine
+                  		 	   					<br></br>qf. de séparer les 2 domaines, et ce n'est pas en
+                  	  				 			<br></br>disant que l'une = ét. des <span class="highlight2">sons</span> et l'autre, des <span class="highlight2">formes</span>,
+                  	   							<br></br>qu'on obtient une ligne de démarcation satisfaisante.
+                  							
+                  		 	   					<br></br>Mais cette ligne de dém. est impérieusement
+                  					   			<br></br>nécessaire pour éviter de lamentables confusions.
+                  							</p><br></br><p class="large">
+                  								<br></br><span class="highlight2">Principe</span> de direction : 
+                  							
+                  								<br></br>Toutes les fois qu'on siconsidère une même <span class="highlight2">forme</span> à
+                  	   							<br></br>des dates diverses, c'est faire de la <span class="highlight2">φonétiq.</span>, - et toutes
+                  		 	   					<br></br>les fois qu'on considère des <span class="highlight2">formes</span> diverses à 1 même
+                  	   							<br></br>date, on fait de la <span class="highlight2">morφologie</span>.
+                  							</p></span></div>
+         <div class="box-contenitore"><span class="affiancato"><img class="&#xA;                img-facs&#xA;            " src="./immagini/ms_fr_03951_07_p002.jpg" alt="&#xA;                Seconda pagina della fonte primaria&#xA;            " style="&#xA;                width:100%; height:100%; object-fit: contain;&#xA;            "></img></span><span class="affiancato">
+               <h3>Trascrizione diplomatica della seconda pagina</h3><i>
+                  <p class="small">In questa sezione il testo è trascritto diplomaticamente, senza lo scioglimento delle
+                     abbreviazioni e con le ortografie e le interruzioni di riga originali.</p></i><p class="large">
+                  								
+                  								
+                  <table border="1">
+                     <tr>
+                        <td><br></br>v. h'all. </td>
+                        <td><span class="highlight"> zug </span></td>
+                        <td><span class="highlight"> zugi </span></td>
+                     </tr>
+                     <tr>
+                        <td><br></br>nouv. all.</td>
+                        <td><span class="highlight"> zug </span></td>
+                        <td><span class="highlight"> züge </span>.</td>
+                     </tr>
+                  </table>
+                  	   							
+                  							
+                  		 	   					<br></br>Cparer <u><span class="highlight">zugi</span></u> &amp; <u><span class="highlight">züge</span></u>, c'est cparer 2 <span class="highlight2">formes</span>, et
+                  		   					<br></br>néanmoins ce n'est pas faire de la <span class="highlight2">morp.</span>, mais de
+                  			    				<br></br>la <span class="highlight2">φon</span>.
+                  	    					
+                  								<br></br>Comparer <u>u</u>-<u>ü</u> ds <u><span class="highlight">zug</span></u>, <u><span class="highlight">züge</span></u>, c'est cparer
+                  	    						<br></br>2 <span class="highlight2">sons</span>, et néanmoins ce n'est pas de la <span class="highlight2">φon</span>.
+                  							
+                  								
+                  								
+                  <table border="1">
+                     <tr>
+                        <td>Sphère </td>
+                        <td><span class="highlight"> ekwos ekwom </span><br></br><span class="highlight"> ἵππος ἵππον </span></td>
+                     </tr>
+                     <tr>
+                        <td><span class="highlight2">phonétique</span></td>
+                        <td> Sphère <span class="highlight2">morphologique</span></td>
+                     </tr>
+                  </table>
+                  	   							
+                  							
+                  								<br></br>Les 2 sphères confondues ds les locutions courantes :
+                  			    				<br></br><u>chantre</u> se rattache étymol. à <u>chanter</u>
+                  			    				<br></br> 
+                  								" " "
+                  									chantre se rattache étymologiquement
+                  								 à <u><span class="highlight">cantor</span></u>
+                  	   							<br></br><span class="highlight">φόρος</span> vient de <span class="highlight">φέρω</span>
+                  	    						<br></br>
+                  								" " "
+                  									<span class="highlight">φόρος</span> vient de 
+                  								 <u><i>bhoros</i></u>
+                  	    					</p></span></div>
+         <div class="box-contenitore"><span class="affiancato"><img class="&#xA;            img-facs&#xA;        " src="./immagini/ms_fr_03951_07_p003.jpg" alt="&#xA;            Terza pagina della fonte primaria&#xA;        " style="&#xA;            width:100%; height:100%; object-fit: contain;&#xA;        "></img></span><span class="affiancato">
+               <h3>Trascrizione diplomatica della terza pagina</h3><i>
+                  <p class="small">In questa sezione il testo è trascritto diplomaticamente, senza lo scioglimento delle
+                     abbreviazioni e con le ortografie e le interruzioni di riga originali.</p></i><p class="large">
+                  							<br></br>Obs. L'<u><span class="highlight2">Étymologie</span></u>, qu'on don pf. come 1
+                  		    					<br></br>branche de la sc. du <span class="highlight2">langage</span>, ne représente
+                  							<br></br>pas 1 ordre déterminé de fairerecherches
+                  							<br></br>et encore moins 1 ordre dét.de <span class="highlight2">faits</span>.
+                  							
+                  		    					<br></br>Faire de l'<span class="highlight2">étym.</span>, c'est faire 1 cert. ap
+                  							<br></br>=plication de nos <span class="highlight2">conaissances</span> <span class="highlight2">phoneth.</span> et
+                  		    					<br></br><span class="highlight2">morφol.</span>.
+                  							
+                  								
+                  									<br></br>Ramener par la 
+                  									<br></br><span class="highlight2">φon.</span> jusqu'à l'<span class="highlight2">époq.</span>
+                  									<br></br>où le <span class="highlight2">mot</span> devient
+                  									<br></br><span class="highlight2">morφol.</span> analysable.
+                  								
+                  							
+                  							
+                  								
+                  <table border="1">
+                     <tr>
+                        <td>Coucher <br></br> coulchier </td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td> <span class="highlight"> collocare</span> </td>
+                        <td> <span class="highlight"> colligo</span> <span class="highlight">locare</span></td>
+                     </tr>
+                  </table>
+                  								
+                  							
+                  		   					<br></br>Qf. l'<span class="highlight2">étymol.</span> ne se meut même
+                  							<br></br>que ds les modificat. de l'<span class="highlight2">idée</span>.
+                  		    					<br></br><u>Le barreau</u>,
+                  							<br></br><u><span class="highlight">αὔτως</span></u>. 
+                  							</p></span></div>
+      </div>
+      <div id="torna-menu"><a href="#menu">Torna al menu</a></div>
+      <div id="bibliografia" class="box">
+         <h2>Bibliografia</h2>
+         <ul>
+            <p>Manoscritto: </p>
+            <li>Ferdinand de Saussure, <i>Morphologie</i>, Genève: Bibliothèque de Genève, 2017. </li>
+            <p>Risorse bibliografiche: </p>
+            <li><b>Fadda2017: </b>Emanuele Fadda, <i>Sentimento della lingua. Per un'antropologia linguistica saussuriana</i>, Alessandria: Edizioni dell'Orso, 2017. </li>
+            <li><b>Godel1969: </b>Robert Godel, <i>Les sources manuscrites du cours de linguistique générale de F. de Saussure</i>, Genève: Librairie Droz, 1969. </li>
+            <li><b>Engler1974: </b>Ferdinand de Saussure, <i>Cours de linguistique générale</i>, Wiesbaden: Otto Harrassowitz, 1967-1974. </li>
+         </ul>
+      </div>
+      <div id="torna-menu"><a href="#menu">Torna al menu</a></div>
+      <footer>
+         <p>Crediti:</p>
+         <p class="small">Laura Mazzagufo</p>
+         <p class="small">Corso di Codifica dei Testi, A.A. 2020/2021</p>
+         <p class="small">Corso di Laurea in Informatica Umanistica, Università di Pisa</p>
+      </footer>
+   </body>
+</html>
