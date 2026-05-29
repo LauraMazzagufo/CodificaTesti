@@ -21,7 +21,6 @@
             </respStmt>
             <respStmt>
                <resp>Encoding model by</resp>
-               <name ref="#DS">Daria Spampinato</name>
                <name ref="#LM">Laura Mazzagufo</name>
                <name xml:id="AMDG">Angelo Mario Del Grosso</name>
                <name xml:id="DB">Denise Bruno</name>
