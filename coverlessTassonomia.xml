@@ -63,7 +63,7 @@
 
 		<profileDesc>
             <abstract><p><!-- Qui va inserita una descrizione del contenuto --></p></abstract>
-            <creation><date when="1878-05-02">2 maggio 1878</date></creation>
+            <creation></creation>
         </profileDesc>
 
         <revisionDesc>
