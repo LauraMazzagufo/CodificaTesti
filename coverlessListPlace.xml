@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Lista di entità nominate per i testi codificati in COVerLeSS: i luoghi</title>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1">Digital edition - <date when="2024-10">October 2024</date></edition>
+            <respStmt>
+               <resp>Conversione TEI P5 a cura di</resp>
+               <name xml:id="MP">Mariagiusi Polizzi</name>
+				<name xml:id="GZ">Giuseppe Zappalà</name>
+            </respStmt>
+            <respStmt>
+               <resp>Digital edition project coordinated by</resp>
+               <name xml:id="DS">Daria Spampinato</name>
+               <name xml:id="ADS">Antonio Di Silvestro</name>
+            </respStmt>
+            <respStmt>
+               <resp>Encoding model by</resp>
+               <name resp="#DS">Daria Spampinato</name>
+               <name xml:id="LM">Laura Mazzagufo</name>
+               <name xml:id="AMDG">Angelo Mario Del Grosso</name>
+               <name xml:id="DB">Denise Bruno</name>
+            </respStmt>
+            <funder>NextGenerationEU</funder>
+            <funder>Ministero dell'Università e della Ricerca</funder>
+            <funder>Italia Domani - Piano Nazionale di Ripresa e Resilienza</funder>
+            <funder ref="coverlessListOrganization.xml#CNR">CNR - Consiglio Nazionale delle Ricerche</funder>
+            <funder ref="coverlessListOrganization.xml#UniCT">Università di Catania</funder>
+         </editionStmt>
+         <publicationStmt>
+            <authority ref="coverlessListOrganization.xml#ISTC">CNR ISTC - Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche</authority>
+            <authority ref="coverlessListOrganization.xml#UniCT">Università di Catania</authority>
+            <date when="2025">2025</date>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+            </availability>
+            <idno type="filename">coverlessListPlace.xml</idno>
+         </publicationStmt>
+         <sourceDesc>
+            
+            <listPlace type="toponomastica" ana="#IT">
+					
+				<place xml:id="Sardegna" type="real">
+					<placeName ref="https://www.treccani.it/enciclopedia/sardegna/ https://www.geonames.org/2523227/sardinia.html">
+						<settlement type="regione">Sardegna</settlement>
+						<country key="IT">Italia</country>
+						<note/>
+					</placeName>
+				</place>
+					
+            	<place xml:id="VV" type="real">
+					<placeName ref="https://www.geonames.org/2522776/vibo-valentia.html">Monteleone</placeName>
+					<country key="IT">Italia</country>
+					<note resp="#MP" source="https://www.treccani.it/enciclopedia/vibo-valentia/"><p>Comune della Calabria (fino al 1927 Monteleone di Calabria), capoluogo di provincia.</p></note>
+				</place>
+            </listPlace>
+
+			<listPlace type="odonomastica" ana="#IT">
+				<place xml:id="Teatro_Manzoni" type="real">
+					<placeName>Teatro Manzoni</placeName>
+					<settlement type="provincia" key="MI">Milano</settlement>
+					<country key="IT">Italia</country>
+					<note resp="#MP" source="https://it.wikipedia.org/wiki/Teatro_Manzoni_(Milano)"><p>Il Teatro Manzoni è un teatro di Milano, inaugurato il 15 maggio 1870 con il nome di Teatro sociale di Milano, venendo poi intitolato ad Alessandro Manzoni solo dopo la sua scomparsa nel 1873.</p></note>
+				</place>
+
+				<place xml:id="Campidoglio" type="real">
+					<placeName>Campidoglio (Palazzo Senatorio)</placeName>
+					<country key="IT">Italia</country>
+				</place>
+					
+			</listPlace>
+
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>Questo file contiene la lista completa dei luoghi codificati per il progetto COVerLeSS.</p>
+      </body>
+   </text>
+</TEI>
