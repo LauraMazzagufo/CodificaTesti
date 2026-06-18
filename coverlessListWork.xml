@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>
+					Lista di entità nominate per i testi codificati in COVerLeSS: le opere del Verismo
+				</title>
+				<respStmt>
+					<resp>Conversione TEI P5</resp>
+					<persName xml:id="MP">Mariagiusi Polizzi</persName>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition n="1">Digital edition - <date when="2024-10">October 2024</date></edition>
+				<respStmt>
+					<resp>Digital edition project coordineted by</resp>
+					<name xml:id="DS">Daria Spampinato</name>
+					<name xml:id="ADS">Antonio Di Silvestro</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding model by</resp>
+					<name resp="#DS">Daria Spampinato</name>
+					<name xml:id="LM">Laura Mazzagufo</name>
+					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
+					<name xml:id="DB">Denise Bruno</name>
+				</respStmt>
+				<funder>NextGenerationEU</funder>
+				<funder>Ministero dell'Università e della Ricerca</funder>
+				<funder>Italia Domani - Piano Nazionale di Ripresa e Resilienza</funder>
+				<funder ref="coverlessListOrganization.xml#CNR">CNR - Consiglio Nazionale delle Ricerche</funder>
+				<funder ref="coverlessListOrganization.xml#UniCT">Università di Catania</funder>
+			</editionStmt>
+			<publicationStmt>
+				<!-- Dati di diffusione e distribuzione dell'edizione -->
+                <authority ref="coverlessListOrganization.xml#ISTC">CNR ISTC - Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche</authority>
+                <authority ref="coverlessListOrganization.xml#UniCT">Università di Catania</authority>
+                <date when="2025">2025</date>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+                </availability>
+                <idno type="filename">coverlessListWork.xml</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Born digital.</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>This is a template for a minimal TEI header with the mandatory components:</p>
+		</body>
+		<back>
+			<div type="work">
+				<listBibl xml:id="bibliografiaPrimaria">
+
+					
+					<!-- Esempio di entrata bibliografica dalla BIBLIOGRAFIA PRIMARIA  -->
+					<biblStruct type="romanzo" xml:id="carbonari">
+						<monogr>
+							<author ref="coverlessListPerson.xml#giovanniVerga">Giovanni Verga</author>
+							<title type="main" level="m">I Carbonari della montagna</title>
+							<!-- inserire se presente un sottotitolo: <title type="sub">Sottotitolo</title> -->
+							<imprint>
+								<publisher>Galatola</publisher>
+								<pubPlace>Catania</pubPlace>
+								<date from="1861" to="1862">1861-1862</date>
+							</imprint>
+						</monogr>
+					</biblStruct>
+
+					<biblStruct type="raccoltaDiRomanzi" xml:id="raccoltaCapineraEva">
+						<monogr>
+							<author ref="coverlessListPerson.xml#giovanniVerga">Giovanni Verga</author>
+							<title type="main" level="s">Storia di una capinera</title>
+							<title type="sub">Eva</title>
+							<imprint>
+								<publisher>Treves</publisher>
+								<pubPlace>Milano</pubPlace>
+								<date when="1873">1873</date>
+							</imprint>
+						</monogr>
+					</biblStruct>
+					
+					<biblStruct type="novella" xml:id="neddagiugno74">
+						<monogr>
+							<author ref="coverlessListPerson.xml#giovanniVerga">Giovanni Verga</author>
+							<title type="main" level="m">Nedda</title>
+							<imprint>
+								<pubPlace>Milano</pubPlace>
+								<publisher>Brigola</publisher>
+								<date when="1874-06-25">1874</date>
+							</imprint>
+						</monogr>
+					</biblStruct>
+				</listBibl>
+
+				<listBibl xml:id="bibliografiaSecondaria">
+
+						<!-- Esempio di entrata bibliografica dalla BIBLIOGRAFIA SECONDARIA  -->
+					
+						<biblStruct xml:id="napoli">
+							<monogr>
+								<author ref="coverlessListPerson.xml#carlodelBalzo">Carlo Del Balzo</author>
+								<title type="main" level="m">Napoli e i Napoletani</title>
+								<imprint>
+									<pubPlace>Milano</pubPlace>
+									<publisher>Fratelli Treves</publisher>
+									<date when="1885">1885</date>
+								</imprint>
+							</monogr>
+						</biblStruct>
+						
+						<biblStruct xml:id="marchese">
+							<monogr>
+								<author ref="coverlessListPerson.xml#luigiCapuana">Luigi Capuana</author>
+								<title type="main" level="m">Il Marchese di Roccaverdina</title>
+								<imprint>
+									<pubPlace>Milano</pubPlace>
+									<publisher>Treves</publisher>
+									<date when="1901">1901</date>
+								</imprint>
+							</monogr>
+						</biblStruct>
+						
+						<biblStruct xml:id="spiritismo">
+							<monogr>
+								<author ref="coverlessListPerson.xml#luigiCapuana">Luigi Capuana</author>
+								<title type="main" level="m">Spiritismo?</title>
+								<imprint>
+									<pubPlace>Catania</pubPlace>
+									<publisher>Giannotta</publisher>
+									<date when="1884">1884</date>
+								</imprint>
+							</monogr>
+						</biblStruct>
+					
+				</listBibl>
+					
+
+				<!-- altri esempi (non in COVerLeSS) da cui trarre spunto:
+				<biblStruct type="book" xml:id="OdiB">
+					<monogr>
+						<author ref="#GC">Carducci Giosuè</author>
+						<title type="main">Odi barbare</title>
+						<imprint>
+							<publisher>Zanichelli</publisher>
+							<pubPlace>Modena</pubPlace>
+							<date>1877</date>
+								<note>La raccolta contiene anche la poesia "Fonti del Clitumno", citata dall'autore della bibliografia su Guarnerio.</note>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="RM">
+					<monogr>
+						<author ref="#GC">Carducci Giosuè</author>
+						<title type="main">Rime nuove</title>
+						<imprint>
+							<publisher>Zanichelli</publisher>
+							<pubPlace>Bologna</pubPlace>
+							<date>1887</date>
+						</imprint>
+					</monogr>
+					<note>La raccolta contiene anche le poesie "Idillio maremmano" e "Intermezzo", citate dall'autore della bibliografia su Guarnerio.</note>
+				</biblStruct>
+				<biblStruct type="book" xml:id="Lyr">
+					<monogr>
+						<author ref="#EP">Panzacchi Enrico</author>
+						<title type="main">Lyrica. </title>
+						<title type="sub">Romanze e canzoni</title>
+						<imprint>
+							<publisher>Zanichelli</publisher>
+							<pubPlace>Modena</pubPlace>
+							<date>1877</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+					<biblStruct type="book" xml:id="Pos">
+					<monogr>
+						<author ref="#OG">Guerrini Olindo</author>
+						<title type="main">Postuma. </title>
+						<title type="sub">Canzoniere di Lorenzo Stecchetti</title>
+						<imprint>
+							<publisher>Zanichelli</publisher>
+							<pubPlace>Bologna</pubPlace>
+							<date>1877</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="NPol">
+					<monogr>
+						<author ref="#OG">Guerrini Olindo</author>
+						<title type="main">Nova polemica</title>
+						<imprint>
+							<publisher>Zanichelli</publisher>
+							<pubPlace>Bologna</pubPlace>
+							<date>1878</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="PGG">
+					<monogr>
+						<author ref="#GG">Giusti Giuseppe</author>
+						<title type="main">Poesie</title>
+						<imprint>
+							<publisher>Editore sconosciuto</publisher>
+							<pubPlace>Firenze</pubPlace>
+							<date>1866</date>
+						</imprint>
+					</monogr>
+					<note>La raccolta contiene anche la poesia "Il deputato", citata dall'autore della bibliografia su Guarnerio.</note>
+				</biblStruct>
+					<biblStruct type="book" xml:id="bib">
+					<monogr>
+						<author>Sconosciuto</author>
+						<title>Bibbia</title>
+						<imprint>
+							<publisher>Editore sconosciuto</publisher>
+							<pubPlace>Luogo sconosciuto</pubPlace>
+							<date>Data di pubblicazione sconosciuta</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="leOpere">
+					<monogr>
+						<author ref="#GV">Vasari Giorgio</author>
+						<title type="main">Le opere</title>
+						<title type="sub"> con nuove annotazioni e commenti di <persName ref="#GaetMil">Gaetano Milanesi</persName></title>
+						<imprint>
+						<publisher>Sansoni</publisher>
+						<pubPlace>Firenze</pubPlace>
+						<date>1878</date>
+						<respStmt>
+							<resp>Curato da</resp>
+							<persName ref="#GaetMil">Milanesi Gaetano</persName>
+						</respStmt>
+						<note>"Le opere" comprende le Vite, i Ragionamenti, l'Epistolario, citate nella bibliografia di Vasari.</note>
+						</imprint>
+					</monogr>
+					</biblStruct>
+					<biblStruct type="book" xml:id="centiloquio">
+					<monogr>
+						<author ref="#AP">Pucci Antonio</author>
+						<title type="main">Centiloquio</title>
+						<imprint>
+							<publisher>Editore sconosciuto</publisher>
+							<pubPlace>Firenze</pubPlace>
+							<date>1373</date>
+						</imprint>
+					</monogr>
+					<note>Il sonetto a cui si fa riferimento è compreso nel Centiloquio.</note>
+				</biblStruct>
+
+				<biblStruct type="magazine" xml:id="athenoeum">
+					<monogr>
+					<title type="main">Athenaeum</title>
+					<imprint>
+						<publisher>Schlegel</publisher>
+						<pubPlace>Berlino</pubPlace>
+						<date>1798</date>
+						<note>Rivista programmatica del Romanticismo tedesco.</note>
+					</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="appLeop">
+					<monogr>
+						<author ref="#GLeop">Leopardi Giacomo</author>
+						<title type="main">Appendice all'Epistolario ed agli scritti giovanili</title>
+						<imprint>
+							<publisher>Barbèra</publisher>
+							<pubPlace>Firenze</pubPlace>
+							<date>1878</date>
+							<respStmt>
+								<resp>Curatore dell'opera</resp>
+								<name ref="#PV">Prospero Viani</name>
+							</respStmt>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="avvocatura">
+					<monogr>
+					<author ref="#GZ">Zanardelli Giuseppe</author>
+					<title type="main">L'Avvocatura</title>
+					<imprint>
+						<publisher>Barbèra</publisher>
+						<pubPlace>Firenze</pubPlace>
+						<date>1878</date>
+					</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="sonettiDialetto">
+					<monogr>
+					<author ref="#LuFer">Ferretti Luigi</author>
+					<title type="main">Sonetti in dialetto romanesco</title>
+					<imprint>
+						<publisher>Barbèra</publisher>
+						<pubPlace>Firenze</pubPlace>
+						<date>1879</date>
+						<respStmt>
+							<resp>Curatore dell'opera</resp>
+							<persName ref="#LM">Luigi Morandi</persName></respStmt>
+					</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="iViaggi">
+					<monogr>
+					<author ref="#FC">Carletti Francesco</author>
+					<title type="main">I viaggi</title>
+					<imprint>
+						<publisher>Barbèra</publisher>
+						<pubPlace>Firenze</pubPlace>
+					</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="rimeVG">
+					<monogr>
+					<author ref="#VG">Gàmbara Veronica</author>
+					<title type="main">Rime</title>
+					<imprint>
+						<publisher>Barbèra</publisher>
+						<pubPlace>Firenze</pubPlace>
+					</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="poesieGM">
+					<monogr>
+					<author ref="#GMar">Marchetti Giovanni</author>
+					<title type="main">Poesie</title>
+					<imprint>
+						<publisher>Barbèra</publisher>
+						<pubPlace>Firenze</pubPlace>
+					</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="JetE">
+					<monogr>
+						<author ref="#JS">Soury Jules</author>
+						<title type="main">Jésus et les Évangiles</title>
+						<imprint>
+							<publisher>Charpentier</publisher>
+							<pubPlace>Parigi</pubPlace>
+							<date>1878</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="journal" xml:id="JouLeTemps">
+					<monogr>
+						<title type="main">Le Temps</title>
+						<imprint>
+							<publisher>Editore sconosciuto</publisher>
+							<pubPlace>Parigi</pubPlace>
+							<date from="1861" to="1942">Pubblicato dal 1861 al 1942</date>
+							<respStmt>
+								<resp>Fondato da</resp>
+								<persName>Auguste Nefftzer</persName>
+							</respStmt>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="journal" xml:id="MLA">
+					<monogr>
+						<title type="main">Magazin für die Literatur des Auslandes</title>
+						<respStmt>
+							<resp>Fondato da</resp>
+							<persName>Joseph Lehmann</persName>
+						</respStmt>
+						<imprint>
+							<publisher>	A. W. Hayn</publisher>
+							<pubPlace>Berlino</pubPlace>
+							<date from="1832" to="1915">Pubblicato dal 1832 al 1915</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<biblStruct type="book" xml:id="RPFE">
+					<monogr>
+						<title type="main">Relations politiques de la France et de l'Espagne avec l'Écosse au XVIe Siècle</title>
+						<respStmt>
+							<resp>Curato da</resp>
+							<persName>Alexandre Teulet</persName>
+						</respStmt>
+						<imprint>
+							<publisher>Veuve Jules Renouard, Éditeur</publisher>
+							<pubPlace>Paris</pubPlace>
+							<date>1862</date>
+						</imprint>
+					</monogr>
+				</biblStruct> -->
+
+			</div>
+		</back>
+	</text>
+</TEI>
