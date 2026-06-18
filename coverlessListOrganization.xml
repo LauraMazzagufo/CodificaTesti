@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>
+					Lista di entità nominate per i testi codificati in COVerLeSS: gli enti e le istituzioni
+				</title>
+			</titleStmt>
+			<editionStmt>
+				<edition n="1">Digital edition - <date when="2024-10">October 2024</date></edition>
+				<respStmt>
+					<resp>Digital edition project coordineted by</resp>
+					<name xml:id="DS">Daria Spampinato</name>
+					<name xml:id="ADS">Antonio Di Silvestro</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding model by</resp>
+					<name resp="#DS">Daria Spampinato</name>
+					<name xml:id="LM">Laura Mazzagufo</name>
+					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
+					<name xml:id="DB">Denise Bruno</name>
+				</respStmt>
+				<funder>NextGenerationEU</funder>
+				<funder>Ministero dell'Università e della Ricerca</funder>
+				<funder>Italia Domani - Piano Nazionale di Ripresa e Resilienza</funder>
+				<funder ref="coverlessListOrganization.xml#CNR">CNR - Consiglio Nazionale delle Ricerche</funder>
+				<funder ref="coverlessListOrganization.xml#UniCT">Università di Catania</funder>
+			</editionStmt>
+			<publicationStmt>
+				<!-- Dati di diffusione e distribuzione dell'edizione -->
+                <authority ref="coverlessListOrganization.xml#ISTC">CNR ISTC - Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche</authority>
+                <authority ref="coverlessListOrganization.xml#UniCT">Università di Catania</authority>
+                <date when="2025">2025</date>
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+                </availability>
+                <idno type="filename">coverlessListOrganization.xml</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<listOrg xml:id="listorg">
+
+					<org type="association" xml:id="CNCMLF">
+                        <orgName type="main" ref="https://biblioteche.cultura.gov.it/it/comitati-nazionali/visualizza-i-comitati-nazionali/comitato/Comitato-Nazionale-per-le-celebrazioni-del-centenario-della-morte-di-Leopoldo-Franchetti/">Comitato Nazionale per il Centenario della Morte di Leopoldo Franchetti</orgName>
+                        <desc>Il Comitato Nazionale per il Centenario della Morte di Leopoldo Franchetti è stato istituito nel 2016 dal Ministero dei Beni e delle Attività Culturali per celebrare il centenario della scomparsa di Leopoldo Franchetti, avvenuta nel 1917. Il suo compito era promuovere e coordinare iniziative scientifiche, culturali e divulgative volte a valorizzare l'opera e il pensiero di uno dei principali studiosi della questione meridionale italiana.</desc>
+                    </org>
+
+					<org type="university" xml:id="UniSSOB">
+                        <orgName type="main" ref="https://www.unisob.na.it/">Università degli Studi Suor Orsola Benincasa</orgName>
+                        <placeName ref="coverlessListPlace.xml#NA">Napoli</placeName>
+                        <desc>L’Università degli Studi Suor Orsola Benincasa è un ateneo parastatale con sede a Napoli, considerato la più antica università libera d’Italia. Le sue origini risalgono al 1885 e oggi è specializzato principalmente nelle scienze umane, sociali, giuridiche, economiche, della formazione e della comunicazione.</desc>
+                    </org>
+
+					<org type="publisher" xml:id="zanichelli">
+						<orgName type="main" ref="https://www.animi.it/">Zanichelli editore S.p.A</orgName>
+						<placeName ref="coverlessListPlace.xml#MO">Modena</placeName>
+						<desc>Casa editrice fondata a <placeName ref="coverlessListPlace.xml#MO">Modena</placeName>nel <date when="1859">1859</date>.</desc>
+					</org>
+										
+					<org type="academy" xml:id="accademiaFrancese">
+						<orgName type="main" ref="https://www.treccani.it/enciclopedia/academie-francaise/">Accademia Francese</orgName>
+						<placeName ref="coverlessListPlace.xml#Parigi">Parigi</placeName>
+						<desc>Istituzione sorta (1629 ca.) dalle riunioni di un gruppo di letterati e organizzata regolarmente per opera di Richelieu, che nel 1635 ne divenne ‘protettore’ e le affidò il compito di preparare un dizionario, una grammatica, una retorica e una poetica.</desc>
+					</org>
+					
+										
+				</listOrg>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>This is a template for a minimal TEI header with the mandatory components</p>
+		</body>
+	</text>
+</TEI>
